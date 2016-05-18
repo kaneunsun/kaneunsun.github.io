@@ -1,0 +1,190 @@
+#wrap {
+  width: 100%;
+  height: 900px;
+}
+
+#wrap h3 {
+  font-size: 11pt;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#top_banner {
+  width: 100%;
+  height: 160px;
+  background: #1b932a url("../img/img_jido/bannerpt.png") no-repeat 100%;
+  margin-top: 15px;
+  margin: 0 auto;
+}
+
+#top_banner .banner {
+  width: 100%;
+  height: 155px;
+  padding-top: 5px;
+}
+
+#top_banner .banner > h2 {
+  width: 100px;
+  height: 35px;
+  letter-spacing: 3px;
+  font-size: 1.875rem;
+  font-size: 22pt;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+#top_banner .banner > p {
+  width: 280px;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#container {
+  width: 600px;
+  height: 530px;
+  margin-top: 60px;
+}
+
+#container > .textBox {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+#container > .textBox > h2 {
+  width: 100%;
+  height: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #006634;
+  text-align: center;
+}
+
+#container > .textBox > p {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#container > .loginBox {
+  width: 100%;
+  height: 300px;
+  background-color: #eee;
+}
+
+#container > .loginBox fieldset {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+#container > .loginBox fieldset > ul > li > dl > dt > label {
+  width: 100px;
+  height: 20px;
+  margin-top: 5px;
+  display: block;
+  float: left;
+}
+
+#container > .loginBox fieldset .input01 > input {
+  width: 90px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+#container > .loginBox fieldset > ul > li > dl > dd:nth-of-type(2) input {
+  width: 90px;
+  height: 30px;
+  box-sizing: border-box;
+  margin: 0 5px;
+  border-radius: 2px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+#container > .loginBox fieldset > ul > li > dl > dd:nth-of-type(3) input {
+  width: 90px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+#container > .loginBox fieldset .Box01 {
+  width: 400px;
+  height: 30px;
+  margin-top: 15px;
+  display: block;
+  float: left;
+}
+
+#container > .loginBox fieldset .Box01 > dl > dd > input {
+  width: 280px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  line-height: 30px;
+}
+
+#container > .loginBox fieldset .login_button > #loginbut {
+  width: 90px;
+  height: 60px;
+  background-color: #006634;
+  cursor: pointer;
+  margin-top: -25px;
+  margin-right: 5px;
+  float: right;
+}
+
+#container > .loginBox fieldset .login_button > button > p {
+  text-align: center;
+  color: #fff;
+}
+
+#container > .loginBox fieldset > ul > .textsm > p {
+  margin-top: 30px;
+  color: red;
+  font-size: 0.8rem;
+  float: left;
+}
+
+#container #button02 {
+  width: 550px;
+  height: 50px;
+  margin: 20px 0 50px 0;
+  float: right;
+}
+
+#container #button02 > .textbold {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#container #button02 > p {
+  width: 600px;
+  font-size: 0.8rem;
+  display: block;
+}
+
+#container #button02 > button {
+  margin-top: -25px;
+  float: right;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}

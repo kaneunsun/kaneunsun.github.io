@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./css/resume.css" />
+    <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    
+   <!-- [if lte IE 9]>
+       <script src="./js/dist/html5shiv.min.js"></script>
+       <script src="./js/dist/ie9.min.js"></script>
+       <script src="./js/dist/PIE.js"></script>
+       <script src="./js/dist/respond.min.js"></script>     
+    <![endif]-->
+    <style></style>
+     <script>
+      $(document).ready(function(){
+        $(".nav").on("click", function(){
+        $(this).toggleClass("open");
+        $("#menu").toggleClass("active");
+       });
+          $('.button').on('click',function(){
+          $('.imgBox').slideDown(); 
+              
+          });
+    });
+    </script>
+    <title>이력서</title>
+    
+    
+</head>
+<body>
+<div id="wrap">
+   <h1>ABOUT</h1>
+    <div id="white_top"></div>
+    <div id="whith_right"></div>
+    <div id="whith_bottom"></div>
+    <div id="whith_left"></div>
+    
+    <div class="nav"><div class="icon"></div></div>
+  <div id="menu">
+   <ul>
+    <li class="Home"><a href="../index.html"><span>Home</span></a></li>
+    <li class="About"><a href="../resume/index.html"><span>About</span></a></li>
+    <li class="Portfolio"><a href="../portfolio/index.html"><span>Portfolio</span></a></li>
+    <li class="Contact"><a href="#"><span>Contact</span></a></li>
+    </ul>
+   </div>
+<div id="resume">
+<i><span>인포그래픽</span></i>
+</div>
+<div class="button"><p>▼</p></div>
+<div class="imgBox">
+<div class="img_button"><a href="./index.html">돌아가기</a></div>
+</div>
+</div>
+</body>
+</html>

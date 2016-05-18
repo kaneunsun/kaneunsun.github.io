@@ -1,0 +1,118 @@
+@media screen and (min-width: 1024px){
+    
+#wrap{
+    width: 90%;
+    height: 100%;
+    
+    >h1{
+        width: 100%;
+        height: 100%;
+        padding-top:30px;
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 1px 1px 3px #44ceb9;
+        color:#fff;
+        }//h1
+    
+    >#white_top{
+        position: fixed;
+        width: 100%;
+        height: 28px;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        z-index: 200;
+    }
+    >#whith_right{
+        position: fixed;
+        width: 28px;
+        height: 100%;
+        background-color: #fff;
+        top: 0;
+        right: 0;
+        z-index: 200;
+    }>#whith_left{
+        position: fixed;
+        width: 28px;
+        height: 100%;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        z-index: 200;
+    }>#whith_bottom{
+        position: fixed;
+        width: 100%;
+        height: 28px;
+        background-color: #fff;
+        bottom: 0;
+        left: 0;
+        z-index: 200;
+    }
+   #menu{
+        position: fixed;
+        right: 0;
+        top: 20%;
+        width: 10em;
+        margin-top: -2.5em;
+        z-index: 500;
+        background-color: #fff;
+        color:#fff;
+        border-radius: 3em 0em 0em 3em;
+        padding:.5em 2em .5em 0em;
+        
+        >ul{
+            height: 100%;
+            width: 100%;
+            /*margin-right: 40px;*/
+            text-align: left;
+            font-family: "Josefin Sans" , sans-serif, bold;
+            >li>a>span{
+                width: 100%;
+                height: 100%;
+                font-size: 1.5rem;
+                line-height: 150%;
+                letter-spacing: 2px;
+            &:hover{
+                color: #f8b62c;
+                text-decoration: none;
+              }
+            }//li
+            }//ul
+    }//#menu
+    
+    
+#portfolio{
+    ul{ padding: 0;
+        margin: 0 auto;
+        width:800px;
+        height: 500px;
+        margin-top:100px; 
+       li{
+            &:nth-of-type(1){
+                width: 390px;
+                height: 100%;
+                float:left;
+                background-size: 100%;
+                background-image: url("../img/pofohover2.png");
+                background-repeat: no-repeat;
+                background-position: center;
+             &:hover{
+                 transform: scale(1.2);transition: all 0.5s;}
+            }//li:nth(1)
+            &:nth-of-type(2){
+                width: 380px;
+                height: 100%;
+                float:right;
+                background-size: 100%;
+                background-image: url("../img/pofohover1.png");
+                background-repeat: no-repeat;
+                background-position: center;
+              &:hover{transform: scale(1.2);transition: all 0.5s;}
+                
+            }//li:nth(2)
+            
+        }//li
+    }//ul
+  }//#portfolio
+}//#wrap
+}

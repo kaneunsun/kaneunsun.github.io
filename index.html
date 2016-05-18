@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./home/css/lib/reset.css" />
+    <link rel="stylesheet" href="./home/css/portfolio_1.css" />
+   <script src="./home/js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="./home/js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./home/js/jquery/jquery-ui.min.js"></script>
+    
+   <!-- [if lte IE 9]>
+       <script src="./home/js/dist/html5shiv.min.js"></script>
+       <script src="./home/js/dist/ie9.min.js"></script>
+       <script src="./home/js/dist/PIE.js"></script>
+       <script src="./home/js/dist/respond.min.js"></script>     
+    <![endif]-->
+    
+    <style></style>
+    <script>
+    $(document).ready(function(){
+        $(".nav").on("click", function(){
+      $(this).toggleClass("open");
+$("#menu").toggleClass("active");
+})
+    });
+    </script>
+  
+      <title>간은선 홈페이지</title>
+</head>
+<body>
+ <div id="wrap">
+  <div class="nav"><div class="icon"></div></div>
+  <div id="menu">
+   <ul>
+    <li class="Home"><a href="./index.html"><span>Home</span></a></li>
+    <li class="About"><a href="./resume/index.html"><span>About</span></a></li>
+    <li class="Portfolio"><a href="./portfolio/index.html"><span>Portfolio</span></a></li>
+    <li class="Contact"><a href="#"><span>Contact</span></a></li>
+    </ul>
+</div>
+ <div id="face"></div>
+ <div id="footer">CONTACT@kaneunsun.dothome.co.kr</div>
+
+</div>
+</body>
+</html>

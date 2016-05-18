@@ -1,0 +1,34 @@
+//basic.scss
+
+$main :#1b932a;
+$sub01:#ccc;
+$sub02: #e65c35;
+$sub-gr:#eee;
+$black:#333;
+$white:#ffffff;
+$line :1px solid $sub01;
+$font : 1.2rem;
+$fontbd : bold;
+$img:"../img/all";
+
+
+
+@mixin link($wd:100%,$hg:100%, $br:no-repeat, $bi:$img, $f:"file", $t:".png",$bp:0 0, $ba:scroll, $bs:auto) {
+    width:$wd; 
+    height:$hg; 
+    background-repeat:$br; 
+    background-image:$bi; 
+    background-position:$bp; 
+    background-attachment:$ba;
+    -webkit-background-size:$bs;
+    -moz-background-size:$bs;
+    -ms-background-size:$bs;
+    -o-background-size:$bs;
+    background-size:$bs;
+     >span{
+        @extend %hidden;
+    } 
+}
+
+
+
