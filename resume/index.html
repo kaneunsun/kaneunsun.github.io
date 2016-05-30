@@ -24,10 +24,14 @@
         $("#menu").toggleClass("active");
        });
           $('.button').on('click',function(){
-          $('.imgBox').slideDown(); 
+          $('.box_1').stop().slideDown(1000,function(){
               
           });
-    });
+          $('.img_button').find('a').on("click",function(){
+              $('.box_1').stop().slideUp(1000);
+          });
+           });   
+          });
     </script>
     <title>이력서</title>
     
@@ -44,18 +48,21 @@
     <div class="nav"><div class="icon"></div></div>
   <div id="menu">
    <ul>
-    <li class="Home"><a href="../index.html"><span>Home</span></a></li>
-    <li class="About"><a href="../resume/index.html"><span>About</span></a></li>
-    <li class="Portfolio"><a href="../portfolio/index.html"><span>Portfolio</span></a></li>
-    <li class="Contact"><a href="#"><span>Contact</span></a></li>
+    <li class="Home"><a href="../index.html">Home</a></li>
+    <li class="About"><a href="../resume/index.html">About</a></li>
+    <li class="Portfolio_1"><a href="../portfolio/index.html">Portfolio1</a></li>
+     <li class="Portfolio_2"><a href="../portfolio2/index.html">Portfolio2</a></li>
+    <li class="Contact"><a href="../contact/index.html">Contact</a></li>
     </ul>
    </div>
-<div id="resume">
-<i><span>인포그래픽</span></i>
-</div>
+   <div id="resume_line">
+<div class="resume"></div>
+    </div>
 <div class="button"><p>▼</p></div>
+<div class="box_1">
 <div class="imgBox">
-<div class="img_button"><a href="./index.html">돌아가기</a></div>
+<div class="img_button"><a href="#">돌아가기</a></div>
+</div>
 </div>
 </div>
 </body>

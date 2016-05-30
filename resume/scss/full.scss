@@ -1,4 +1,6 @@
-@media screen and (min-width: 1024px){
+@import 'basic.scss';
+
+@media screen and (min-width: 960px){
     
 #wrap{
     width: 90%;
@@ -6,49 +8,39 @@
     
     >h1{
         width: 100%;
-        height: 100%;
+        height: 80px;
         padding-top:30px;
         font-size: 3rem;
         text-align: center;
-        text-shadow: 1px 1px 3px #44ceb9;
-        color:#fff;
+        text-shadow:$shadow;
+        color:$white;
         }//h1
-
-    /*h1는 rem으로 움직이이 없으니깐*/
     
     >#white_top{
-        position: fixed;
-        width: 100%;
+         width: 100%;
         height: 28px;
-        background-color: #fff;
-        top: 0;
         left: 0;
-        z-index: 200;
-    }//#white_top
+        top:0;
+        @include white_bar;
+    }
     >#whith_right{
-        position: fixed;
-        width: 28px;
+         width: 28px;
         height: 100%;
-        background-color: #fff;
         top: 0;
         right: 0;
-        z-index: 200;
+        @include white_bar;
     }>#whith_left{
-        position: fixed;
-        width: 28px;
+          width: 28px;
         height: 100%;
-        background-color: #fff;
-        top: 0;
+        top:0;
         left: 0;
-        z-index: 200;
+        @include white_bar;
     }>#whith_bottom{
-        position: fixed;
-        width: 100%;
+       width: 100%;
         height: 28px;
-        background-color: #fff;
-        bottom: 0;
+        bottom:0;
         left: 0;
-        z-index: 200;
+        @include white_bar;
     }
     
     #menu{
@@ -62,45 +54,55 @@
         color:#fff;
         border-radius: 3em 0em 0em 3em;
         padding:.5em 2em .5em 0em;
+        box-shadow:$shadow2;
+      /*  z-index: -10;*/
         
         >ul{
             height: 100%;
             width: 100%;
-            /*margin-right: 40px;*/
             text-align: left;
             font-family: "Josefin Sans" , sans-serif, bold;
-            >li>a>span{
+            margin-left: -10px;
+            >li>a{
                 width: 100%;
                 height: 100%;
                 font-size: 1.5rem;
                 line-height: 150%;
                 letter-spacing: 2px;
             &:hover{
-                color: #f8b62c;
+                color: $main;  
                 text-decoration: none;
               }
             }//li
             }//ul
     }//#menu
-#resume{
+#resume_line{
         margin: 0 auto;
-        margin-top: 3%;
-        width: 600px;
-        height: 450px;
+        width: 700px;
+        height: 500px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #fff;
+        position: relative;
+.resume{
+        margin:5px;
+        width:calc(100% - 10px);
+        height:calc(100% - 10px);
         background-image: url("../img/about_k.png");
         background-color:#fff;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 75%;
-        box-shadow: 5px 5px 8px #333;
+        background-size: 80%;
+        position:absolute;
     }//#resume
+    }
     .button{
         width: 50px;
         height: 50px;
         background-color:#fff;
         border-radius: 50%;
         margin:0 auto;
-        margin-top:20px;
+        margin-top:30px;
         box-shadow: 5px 5px 8px #333;
         &:hover{
            background-color:#333; 
@@ -118,19 +120,26 @@
         }
      
          }//.button
+    .box_1{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        position: fixed;
+         z-index: 600;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
 .imgBox {
-    background-image: url(../img/info.png);
+    background-image: url(../img/info_1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #fff;
+    background-size:90%;
     height: 100%;
-    position: fixed;
-    z-index: 600;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: none;
+    width: 100%;
+    
    >.img_button{
        left: 46%;
        top:5%;
@@ -149,6 +158,6 @@
         font-weight: bold;}
       }//ul
     }//.menu
-    
+    }
 }//#wrap
 }

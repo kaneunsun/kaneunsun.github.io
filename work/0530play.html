@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="./css/lib/normalize.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="./js/jquery/jquery-1.12.2.min.js"></script>
+	<script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+	<script src="./js/jquery/jquery-ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<title>Document</title>
+	<style>
+		.multi{padding: 10px 0; height: auto;}
+		.multi>li{height: 40px; padding:5px 10px;}
+		.multi>li>button{width: 100px; height: 100%;}
+		.multi>li>marquee{width:100%; height: 100%; background-color: #fff; line-height: 30px;}
+		.list_box{margin-top: 15px;}
+		.list_box li{padding: 10px 0; text-align: center;transition: all 0.5s; cursor: pointer;}
+		.list_box li:hover{background-color: #acc; color:#333; font-weight: bold;}
+		.au_btn{width: 100px; height: 30px; position: relative;display:inline-block;}
+		.btn_a{top: 0; left: 0; width: 100%; height: 100%; position: absolute; }
+		.play{z-index:100;}
+		/*.stop{z-index:0;}*/
+		.stop_plus{z-index: 200;}
+	</style> 
+	<script>
+	
+	</script>
+	</head>
+<body>
+	<div class="container-fluid bg-info">
+		<ul class="row multi">
+			<li class="col-md-3 col-lg-2 bg-info"></li>
+			<li class="col-md-3 col-lg-4 btn-primary">
+        <button type="button" class="btn btn-success prev">prev</button>
+
+        <div class="au_btn">
+        	<button type="button" class="btn btn_a btn-warning play">play</button>
+        	<button type="button" class="btn btn_a btn-danger stop">stop</button>
+        </div>
+
+        <button type="button" class="btn btn-success next">next</button>
+			</li>
+			
+			<li class="col-md-3 col-lg-4 bg-primary">
+				<marquee direction="left">왼쪽으로 움직임</marquee> 
+			</li>
+			<li class="col-md-3 col-lg-2 bg-info"></li>
+		</ul>
+	</div>
+	<div class="container">
+		<ul class="row list_box">
+			<li class="col-md-3 col-lg-3 bg-primary" data-audio="Crystallize">Crystallize</li>
+			<li class="col-md-3 col-lg-3 bg-primary" data-audio="MasterofTides">MasterofTides</li>
+			<li class="col-md-3 col-lg-3 bg-primary" data-audio="RoundtableRival">RoundtableRival</li>
+			<li class="col-md-3 col-lg-3 bg-primary" data-audio="Shadows">Shadows</li>
+		</ul>
+	</div>
+	<div class="container multi_audio">
+		<audio controls="controls" class="mu1" id="myaudio">
+			<!-- <source id="main" src="./multi/Crystallize.mp3" type="audio/mp3"> -->
+			<!-- <source > -->
+			<!-- <source src="./multi/MasterofTides.mp3" type="audio/mp3">
+			<source src="./multi/RoundtableRival.mp3" type="audio/mp3">
+			<source src="./multi/Shadows.mp3" type="audio/mp3"> -->
+			<p>재생이 되지 않는 브라우저 입니다. 최신 브라우저 및 크롬브라우저를  사용해주세요.</p>
+		</audio>
+	</div>
+
+	<script>
+	(function($){
+		var index = 0;
+		// play list ----------------------------------------------------------------------------------
+		var music_list = ['Eddy Kim.mp3', 'Im In Love.mp3'];
+		// 기본 재생곡명 ----------------------------------------------------------------------------------
+		var nthPlay = './multi/'+music_list[index];
+			$('#myaudio').attr('src', nthPlay);  
+			$('marquee').text(music_list[index]);
+		var prev = $('.prev'),
+        play = $('.play'),
+        stop = $('.stop'),
+        next = $('.next'),
+        au = $('#myaudio')[0],
+        list_box = $('.list_box').children('li'),
+        multi_audio = $('.multi_audio').find('audio');
+     var playing = function(){
+     if( au.play() ) {stop.addClass('stop_plus');} 
+     else {stop.removeClass('stop_plus');}
+   }
+      
+		// play btn ----------------------------------------------------------------------------------
+	   play.on('click', function(){
+	       au.play();
+	       stop.addClass('stop_plus');
+	       // playing();
+	   });
+	   stop.on('click', function(){
+	     	au.pause();
+	       stop.removeClass('stop_plus');
+	       // playing();
+	   });
+	   list_box.on('click', function(){
+	   	var music_btn = $(this).attr('data-audio');
+	   	var m_btn = $(this).index();
+	   		$('#myaudio').attr('src', "./multi/"+music_list[m_btn] );
+	   		$('marquee').text(music_btn);
+	   		playing();
+	   })
+  	// prev btn ----------------------------------------------------------------------------------
+	  	$('.prev').click(function() {
+					index--;
+					if(index < 0) index=music_list.length-1;
+					console.log( index+1 + '번째 소스 재생' );
+					// var nth_list = $('#myaudio source:nth-child('+index+')' ;
+					var nthPlay = './multi/'+music_list[index];
+					$('#myaudio').attr('src', nthPlay); //.attr('src'));
+					// $("#myaudio")[0].load();
+					$("#myaudio")[0].load();
+					$("#myaudio")[0].play();
+					$('marquee').text(music_list[index]);
+					playing();
+				});
+	  
+	  //	next btn ---------------------------------------------------------------------------------
+   		$('.next').click(function() {
+				index++;
+				if(index > music_list.length-1) index=0;
+				console.log( index+1 + '번째 소스 재생' );
+				// var nth_list = $('#myaudio source:nth-child('+index+')' ;
+				var nthPlay = './multi/'+music_list[index];
+				$('#myaudio').attr('src', nthPlay); //.attr('src'));
+				// $("#myaudio")[0].load();
+				$("#myaudio")[0].load();
+				$("#myaudio")[0].play();
+				$('marquee').text(music_list[index]);
+				playing();
+			});
+	})(this.jQuery);
+	</script>
+    </body>
+</html>

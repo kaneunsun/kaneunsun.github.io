@@ -1,0 +1,24 @@
+//basic.scss
+
+
+$main:#febf01;
+$sub1:#44ceb9;
+$white:#ffffff;
+$shadow:1px 1px 3px $sub1;
+$shadow2:-10px 10px $main;
+
+
+@mixin white_bar($posi:fixed,$bgc:$white,$z-in:200){
+-webkit-position: $posi;
+-moz-position: $posi;
+-ms-position: $posi;
+position: $posi;
+-webkit-background-color:$bgc;
+-moz-background-color:$bgc;
+-ms-background-color:$bgc;
+background-color:$bgc;
+-webkit-z-index: $z-in;
+-moz-z-index: $z-in;
+-ms-z-index: $z-in;
+z-index: $z-in;
+}

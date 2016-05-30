@@ -1,71 +1,104 @@
-/*
-Error: Undefined variable: "$sub-gr".
-        on line 13 of scss/foorter.scss
+@media screen and (min-width: 960px) { footer { width: 100%; height: 200px; background-color: #eee; margin-top: 30px; }
+  footer #footer_Box { width: 900px; height: 100%; margin-top: 50px; margin: 0 auto; }
+  footer #footer_Box #footer_top { width: 100%; height: 22px; margin-top: 30px; float: left; }
+  footer #footer_Box #footer_top > .util, footer #footer_Box #footer_top .util2 { width: 350px; height: 100%; padding-top: 5px; float: left; }
+  footer #footer_Box #footer_top > .util > dt, footer #footer_Box #footer_top .util2 > dt { margin-left: 10px; font-weight: bold; font-size: 0.85em; color: #333; float: left; }
+  footer #footer_Box #footer_top > .util > dd > ul > li, footer #footer_Box #footer_top .util2 > dd > ul > li { font-size: 0.75em; float: left; border-right: 1px solid #777; padding: 0 5px; }
+  footer #footer_Box #footer_top > .util > dd > ul > li:last-child, footer #footer_Box #footer_top .util2 > dd > ul > li:last-child { border: 0; }
+  footer #footer_Box .family { width: 160px; height: 20px; float: right; }
+  footer #footer_Box .family > form > #familyOption { font-size: 0.9rem; width: 120px; height: 20px; }
+  footer #footer_Box .family > form > button { width: 30px; height: 20px; background-color: #333; }
+  footer #footer_Box .family > form > button > p { font-size: 0.9rem; color: #fff; cursor: pointer; }
+  footer #footer_Box #footer_body { width: 900px; height: 60px; margin-top: 30px; float: left; }
+  footer #footer_Box #footer_body > .qr { width: 55px; height: 57px; margin-left: 10px; background-image: url("../footer/bac.png"); float: left; }
+  footer #footer_Box #footer_body > .cont_footer { margin-top: 5px; margin-left: 10px; width: 500px; height: 100%; float: left; }
+  footer #footer_Box #footer_body > .cont_footer > ul { width: 100%; height: 15px; line-height: 100%; margin-bottom: 10px; }
+  footer #footer_Box #footer_body > .cont_footer > ul > li { font-size: 0.75em; padding: 0 5px; border-right: 1px solid #777; float: left; }
+  footer #footer_Box #footer_body > .cont_footer > ul > li:last-child { border: 0; }
+  footer #footer_Box #footer_body > .cont_footer address { width: 100%; height: 15px; font-size: 0.75em; float: left; }
+  footer #footer_Box #footer_body > .cont_footer .copy { width: 100%; height: 15px; font-size: 0.75em; float: left; }
+  footer #footer_Box #footer_body .wrap_etc { width: 220px; height: 40px; float: right; /*   margin-right:10px;*/ }
+  footer #footer_Box #footer_body .wrap_etc > ul > li { width: 35px; height: 35px; margin: 4px 4px 0; float: left; background-image: url("../footer/f_i_y_icon.png"); background-position: center; background-repeat: no-repeat; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(1) { background-position: 0; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(2) { background-position: -44px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(3) { background-position: -88px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(4) { background-position: -130px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(5) { background-position: -173px; } }
+@media screen and (min-width: 768px) and (max-width: 959px) { footer { width: 100%; height: 210px; background-color: #eee; margin-top: 3.125vw; }
+  footer #footer_Box { width: 93.75vw; height: 100%; margin-top: 50px; margin: 0 auto; }
+  footer #footer_Box #footer_top { width: 100%; height: auto; margin-top: 30px; float: left; }
+  footer #footer_Box #footer_top > .util, footer #footer_Box #footer_top .util2 { width: 70%; height: 100%; padding: 5px 0 0 10px; float: left; }
+  footer #footer_Box #footer_top > .util > dt, footer #footer_Box #footer_top .util2 > dt { float: left; font-weight: bold; font-size: 0.85em; color: #333; /*margin-left: 10px;*/ }
+  footer #footer_Box #footer_top > .util > dd > ul > li, footer #footer_Box #footer_top .util2 > dd > ul > li { font-size: 0.75em; float: left; border-right: 1px solid #777; padding: 0 5px; }
+  footer #footer_Box #footer_top > .util > dd > ul > li:last-child, footer #footer_Box #footer_top .util2 > dd > ul > li:last-child { border: 0; }
+  footer #footer_Box .family { width: 160px; height: 20px; margin-top: -15px; float: right; }
+  footer #footer_Box .family > form > #familyOption { font-size: 0.9rem; width: 120px; height: 20px; }
+  footer #footer_Box .family > form > button { width: 30px; height: 20px; background-color: #333; }
+  footer #footer_Box .family > form > button > p { font-size: 0.9rem; color: #fff; cursor: pointer; }
+  footer #footer_Box #footer_body { width: 100%; height: 70px; /*margin-top:30px;  */ float: left; padding: 30px 0 0 10px; }
+  footer #footer_Box #footer_body > .qr { width: 55px; height: 57px; /*margin-left:10px;*/ background-image: url("../footer/bac.png"); float: left; }
+  footer #footer_Box #footer_body > .cont_footer { margin-left: 5px; width: 485px; height: 100%; float: left; }
+  footer #footer_Box #footer_body > .cont_footer > ul { width: 95%; height: 15px; line-height: 100%; margin-bottom: 10px; }
+  footer #footer_Box #footer_body > .cont_footer > ul > li { font-size: 0.75em; padding: 0 5px; border-right: 1px solid #777; float: left; }
+  footer #footer_Box #footer_body > .cont_footer > ul > li:last-child { border: 0; }
+  footer #footer_Box #footer_body > .cont_footer address { width: 95%; height: 15px; font-size: 0.75em; float: left; }
+  footer #footer_Box #footer_body > .cont_footer .copy { width: 95%; height: 15px; font-size: 0.75em; float: left; }
+  footer #footer_Box #footer_body .wrap_etc { width: 17.7083vw; height: 40px; float: right; /*   margin-right:10px;*/ }
+  footer #footer_Box #footer_body .wrap_etc > ul > li { width: 35px; height: 35px; margin: 4px 4px 0; float: left; background-image: url("../footer/f_i_y_icon.png"); background-position: center; background-repeat: no-repeat; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(1) { background-position: 0; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(2) { background-position: -44px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(3) { background-position: -88px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(4) { background-position: -130px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(5) { background-position: -173px; } }
+@media screen and (min-width: 640px) and (max-width: 767px) { footer { width: 100%; height: 250px; background-color: #eee; margin-top: 3.125vw; }
+  footer #footer_Box { width: 93.75vw; height: 100%; margin-top: 50px; margin: 0 auto; }
+  footer #footer_Box #footer_top { width: 100%; height: auto; margin-top: 30px; float: left; }
+  footer #footer_Box #footer_top > .util, footer #footer_Box #footer_top .util2 { width: 70%; height: 100%; padding-top: 5px; float: left; }
+  footer #footer_Box #footer_top > .util > dt, footer #footer_Box #footer_top .util2 > dt { float: left; font-weight: bold; font-size: 0.85em; color: #333; /*margin-left: 10px;*/ }
+  footer #footer_Box #footer_top > .util > dd > ul > li, footer #footer_Box #footer_top .util2 > dd > ul > li { font-size: 0.75em; float: left; border-right: 1px solid #777; padding: 0 5px; }
+  footer #footer_Box #footer_top > .util > dd > ul > li:last-child, footer #footer_Box #footer_top .util2 > dd > ul > li:last-child { border: 0; }
+  footer #footer_Box #footer_top .family { width: 160px; height: 20px; margin-top: -15px; float: right; }
+  footer #footer_Box #footer_top .family > form > #familyOption { font-size: 0.9rem; width: 120px; height: 20px; }
+  footer #footer_Box #footer_top .family > form > button { width: 30px; height: 20px; background-color: #333; }
+  footer #footer_Box #footer_top .family > form > button > p { font-size: 0.9rem; color: #fff; cursor: pointer; }
+  footer #footer_Box #footer_body { width: 100%; height: 150px; margin-top: 30px; float: left; /* >.qr{ width: 55px; height: 57px; margin-left:10px; background-image:url("../footer/bac.png"); @include fl;}*/ }
+  footer #footer_Box #footer_body > .cont_footer { margin-left: 5px; width: 100%; height: 80px; float: left; }
+  footer #footer_Box #footer_body > .cont_footer > ul { width: 100%; height: 15px; line-height: 100%; margin-bottom: 10px; }
+  footer #footer_Box #footer_body > .cont_footer > ul > li { font-size: 0.75em; padding: 0 5px; border-right: 1px solid #777; float: left; }
+  footer #footer_Box #footer_body > .cont_footer > ul > li:last-child { border: 0; }
+  footer #footer_Box #footer_body > .cont_footer address { width: 95%; height: 15px; font-size: 0.75em; float: left; }
+  footer #footer_Box #footer_body > .cont_footer .copy { width: 95%; height: 15px; font-size: 0.75em; float: left; }
+  footer #footer_Box #footer_body .wrap_etc { width: 250px; height: 5.21vw; margin: 0 auto; /*   margin-right:10px;*/ }
+  footer #footer_Box #footer_body .wrap_etc > ul > li { width: 35px; height: 35px; margin: 4px 4px 0; float: left; background-image: url("../footer/f_i_y_icon.png"); background-position: center; background-repeat: no-repeat; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(1) { background-position: 0; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(2) { background-position: -44px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(3) { background-position: -88px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(4) { background-position: -130px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(5) { background-position: -173px; } }
+@media screen and (max-width: 639px) { footer { width: 100%; height: 300px; background-color: #eee; margin-top: 3.125vw; }
+  footer #footer_Box { width: 100%; height: auto; margin-top: 50px; }
+  footer #footer_Box #footer_top { width: 100%; height: 100%; margin-top: 20px; float: left; /*.family{ width: 160px;  height: 20px; margin-top:-15px; float: right; >form>#familyOption{ font-size: 0.9rem; width: 120px; height: 20px; }//#familyOption >form>button{ width: 30px;  height: 20px; background-color:#333; >p{ font-size:0.9rem; color:#fff; cursor: pointer;} } }//.family*/ }
+  footer #footer_Box #footer_top > .util, footer #footer_Box #footer_top .util2 { width: 90%; height: 35px; padding: 10px 0; margin: 0 auto; /*text-align: center;*/ }
+  footer #footer_Box #footer_top > .util > dt, footer #footer_Box #footer_top .util2 > dt { width: 30px; height: 20px; text-align: center; font-weight: bold; font-size: 0.85em; color: #333; float: left; }
+  footer #footer_Box #footer_top > .util > dd, footer #footer_Box #footer_top .util2 > dd { width: 100%; height: 15px; text-align: center; display: inline-block; float: left; }
+  footer #footer_Box #footer_top > .util > dd > ul, footer #footer_Box #footer_top .util2 > dd > ul { width: 350px; height: 100%; text-align: center; }
+  footer #footer_Box #footer_top > .util > dd > ul > li, footer #footer_Box #footer_top .util2 > dd > ul > li { width: calc(100% / 5); font-size: 0.75em; float: left; border-right: 1px solid #777; margin: 0 5px 0 0; }
+  footer #footer_Box #footer_top > .util > dd > ul > li:last-child, footer #footer_Box #footer_top .util2 > dd > ul > li:last-child { border: 0; }
+  footer #footer_Box #footer_top .util2 > dd > ul > li:nth-child(2) { width: 35%; }
+  footer #footer_Box #footer_body { width: 100%; height: auto; float: left; /*margin-top:30px; */ /* >.qr{ width: 55px; height: 57px; margin-left:10px; background-image:url("../footer/bac.png"); @include fl;}*/ }
+  footer #footer_Box #footer_body > .cont_footer { width: 100%; height: 100%; float: left; float: left; }
+  footer #footer_Box #footer_body > .cont_footer > ul { width: 60%; height: 15px; padding: 10px 10px; text-align: center; margin: 0 auto; }
+  footer #footer_Box #footer_body > .cont_footer > ul > li { font-size: 0.75em; padding: 0 5px; border-right: 1px solid #777; float: left; }
+  footer #footer_Box #footer_body > .cont_footer > ul > li:last-child { border: 0; }
+  footer #footer_Box #footer_body > .cont_footer address { width: 95%; height: 30px; padding: 10px 10px; font-size: 0.75em; text-align: center; }
+  footer #footer_Box #footer_body > .cont_footer .copy { width: 95%; height: 15px; font-size: 0.75em; float: left; text-align: center; }
+  footer #footer_Box #footer_body .wrap_etc { width: 100%; height: 45px; float: left; margin-top: 20px; }
+  footer #footer_Box #footer_body .wrap_etc > ul { width: 220px; height: 100%; margin: 0 auto; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li { width: 35px; height: 35px; margin: 4px 4px 0; float: left; background-image: url("../footer/f_i_y_icon.png"); background-position: center; background-repeat: no-repeat; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(1) { background-position: 0; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(2) { background-position: -44px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(3) { background-position: -88px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(4) { background-position: -130px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(5) { background-position: -173px; } }
 
-8: 
-9: 
-10: footer{
-11:     margin-top: 30px; 
-12:     width: 100%;
-13:     background-color:$sub-gr;
-14: 
-15: #footer_Box{ 
-16:     width: 960px; 
-17:     height: 190px; 
-18:     margin-top:50px; 
-
-Backtrace:
-scss/foorter.scss:13
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
-C:/Ruby23/bin/sass:23:in `load'
-C:/Ruby23/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$sub-gr\".\A         on line 13 of scss/foorter.scss\A \A 8: \A 9: \A 10: footer{\A 11:     margin-top: 30px; \A 12:     width: 100%;\A 13:     background-color:$sub-gr;\A 14: \A 15: #footer_Box{ \A 16:     width: 960px; \A 17:     height: 190px; \A 18:     margin-top:50px; "; }
+/*# sourceMappingURL=foorter.css.map */

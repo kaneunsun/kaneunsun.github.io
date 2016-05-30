@@ -1,0 +1,19 @@
+> #gnb { width: 71.125vw; /*100px*/ height: 9.62vw; margin-left: 7vw; position: absolute; top: 6.9vw; left: 18vw; }
+> #gnb > .main { width: calc(100% / 6); height: 50px; float: left; }
+> #gnb > .main:nth-child(1) { width: 13%; }
+> #gnb > .main:nth-child(1) > dd { margin-left: -1.9vw; }
+> #gnb > .main:nth-child(2) { width: 18%; margin-left: 0.9vw; }
+> #gnb > .main:nth-child(2) > dd { margin-left: 0.8vw; }
+> #gnb > .main:nth-child(3) { width: 15%; margin-left: 2vw; }
+> #gnb > .main:nth-child(4) { width: 15%; margin-left: 1.2vw; }
+> #gnb > .main:nth-child(4) > dd { margin-left: -1vw; }
+> #gnb > .main:nth-child(5) { width: 8%; margin-left: 2vw; }
+> #gnb > .main:nth-child(6) { width: 10%; margin-left: 1vw; }
+> #gnb > .main > dt { width: 100%; height: 2.08vw; font-size: 1.7vw; color: #444; cursor: pointer; font-family: 'arial'; font-weight: 300; transition: all 0.5s; }
+> #gnb > .main > dt:hover { color: #aaa; }
+> #gnb > .main > dd { width: 100%; height: 15.625vw; /*padding-top:1vw;*/ }
+> #gnb > .main > dd > ul { width: 50%; height: 100%; text-align: center; }
+> #gnb > .main > dd > ul > li { width: 100px; height: 10%; font-size: 1.2vw; margin-top: 0.8vw; color: #444; font-family: 'arial'; cursor: pointer; transition: all 0.5s; }
+> #gnb > .main > dd > ul > li > a:hover { text-decoration: none; color: #aaa; }
+
+/*# sourceMappingURL=meun.css.map */

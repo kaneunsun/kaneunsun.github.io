@@ -1,0 +1,28 @@
+@media screen and (min-width: 960px) { footer { width: 100%; height: 200px; background-color: #eee; margin-top: 30px; }
+  footer #footer_Box { width: 900px; height: 100%; margin-top: 50px; margin: 0 auto; }
+  footer #footer_Box #footer_top { width: 100%; height: 22px; margin-top: 30px; float: left; }
+  footer #footer_Box #footer_top > .util, footer #footer_Box #footer_top .util2 { width: 350px; height: 100%; padding-top: 5px; float: left; }
+  footer #footer_Box #footer_top > .util > dt, footer #footer_Box #footer_top .util2 > dt { margin-left: 10px; font-weight: bold; font-size: 0.85em; color: #333; float: left; }
+  footer #footer_Box #footer_top > .util > dd > ul > li, footer #footer_Box #footer_top .util2 > dd > ul > li { font-size: 0.75em; float: left; border-right: 1px solid #777; padding: 0 5px; }
+  footer #footer_Box #footer_top > .util > dd > ul > li:last-child, footer #footer_Box #footer_top .util2 > dd > ul > li:last-child { border: 0; }
+  footer #footer_Box .family { width: 160px; height: 20px; float: right; }
+  footer #footer_Box .family > form > #familyOption { font-size: 0.9rem; width: 120px; height: 20px; }
+  footer #footer_Box .family > form > button { width: 30px; height: 20px; background-color: #333; }
+  footer #footer_Box .family > form > button > p { font-size: 0.9rem; color: #fff; cursor: pointer; }
+  footer #footer_Box #footer_body { width: 900px; height: 60px; margin-top: 30px; float: left; }
+  footer #footer_Box #footer_body > .qr { width: 55px; height: 57px; margin-left: 10px; background-image: url("../footer/bac.png"); float: left; }
+  footer #footer_Box #footer_body > .cont_footer { margin-top: 5px; margin-left: 10px; width: 500px; height: 100%; float: left; }
+  footer #footer_Box #footer_body > .cont_footer > ul { width: 100%; height: 15px; line-height: 100%; margin-bottom: 10px; }
+  footer #footer_Box #footer_body > .cont_footer > ul > li { font-size: 0.75em; padding: 0 5px; border-right: 1px solid #777; float: left; }
+  footer #footer_Box #footer_body > .cont_footer > ul > li:last-child { border: 0; }
+  footer #footer_Box #footer_body > .cont_footer address { width: 100%; height: 15px; font-size: 0.75em; float: left; }
+  footer #footer_Box #footer_body > .cont_footer .copy { width: 100%; height: 15px; font-size: 0.75em; float: left; }
+  footer #footer_Box #footer_body .wrap_etc { width: 220px; height: 40px; float: right; /*   margin-right:10px;*/ }
+  footer #footer_Box #footer_body .wrap_etc > ul > li { width: 35px; height: 35px; margin: 4px 4px 0; float: left; background-image: url("../footer/f_i_y_icon.png"); background-position: center; background-repeat: no-repeat; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(1) { background-position: 0; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(2) { background-position: -44px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(3) { background-position: -88px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(4) { background-position: -130px; }
+  footer #footer_Box #footer_body .wrap_etc > ul > li:nth-child(5) { background-position: -173px; } }
+
+/*# sourceMappingURL=foorter_pcfull.css.map */

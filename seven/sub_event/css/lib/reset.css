@@ -41,12 +41,12 @@ a{
     background-position: center center; 
     background-repeat: no-repeat;
     text-decoration: none;
-    color:#333;
+    color:#666;
 }
 
 a>span{width: 0;height: 0;display:block; overflow: hidden;}
 
-a:hover{text-decoration:none;}
+a:hover{text-decoration:none; color:#666;}
 
 
 ul, ol, li {list-style: none; display:block;}

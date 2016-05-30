@@ -1,35 +1,30 @@
 #wrap { width: 100%; height: auto; }
 
-/*h3{font-size:11pt;  font-weight: bold;  color:#444; text-align: center;  margin-top:10px;}*/
 /*--------##top_banner----------*/
-#top_banner { width: 100%; height: 175px; }
-#top_banner .banner { width: 100%; height: 160px; background: #1b932a url("../img/top_bann.png") 100% no-repeat; margin-top: 15px; float: left; }
-#top_banner .banner > h2 { width: 126px; height: 32px; font-size: 1.875rem; font-size: 22pt; color: #fff; display: block; margin: 0 auto; margin-top: 45px; }
-#top_banner .banner > p { width: 530px; color: #fff; display: block; margin: 0 auto; margin-top: 20px; }
+#top_banner { width: 100%; height: 175px; margin-top: 15px; position: relative; z-index: -100; }
+#top_banner .banner { width: 100%; height: 160px; background: #1b932a url("../img/top_bann.png") 100% no-repeat; float: left; position: absolute; margin: 0 auto; text-align: center; z-index: -100; }
+#top_banner .banner > h2 { width: 100%; height: auto; display: block; font-size: 1.5em; color: #fff; margin-top: 50px; }
+#top_banner .banner > p { width: 100%; height: auto; display: inline-block; font-size: 1em; color: #fff; margin-top: 20px; }
 
 /*-----content----------*/
-#content { width: 960px; height: 500px; margin-top: 20px; }
-#content .mini_nav { width: 600px; height: 30px; border: 1px solid #bbb; border-width: 1px 0; list-style-type: none; margin: 0 auto; padding: 0; text-align: center; }
-#content .mini_nav li { font-size: 0.9em; color: #666; display: inline-block; margin-top: 8px; }
+#content { width: 960px; height: 100%; margin: 0 auto; margin-top: 20px; margin-bottom: 20px; }
+#content .mini_nav { width: 600px; height: 30px; border: 1px solid #ccc; border-width: 1px 0; list-style-type: none; margin: 0 auto; padding: 0; text-align: center; }
+#content .mini_nav li { font-size: 0.812em; color: #666; display: inline-block; margin-top: 8px; }
 #content .mini_nav li > a { color: #666; }
 #content .mini_nav .home { width: 30px; height: 30px; margin: 0; padding-left: 5px; background-image: url("../img/home.png"); background-repeat: no-repeat; background-position: center; display: inline-block; }
-#content .navi_banner { width: 100%; height: 30px; float: left; padding-top: 80px; }
-#content .navi_banner > .navi_number { width: 550px; float: left; margin-left: 140px; }
-#content .navi_banner > .navi_number > li { width: 70px; float: left; }
-#content .navi_banner > .navi_number > li > a { width: 70px; height: 30px; float: left; background-image: url("../img/206_2010.png"); }
-#content .navi_banner > .navi_number > li > a:hover { width: 70px; height: 30px; float: left; background-image: url("../img/206_2010_on.png"); }
-#content .navi_banner > .navi_number > li:nth-child(1) > a { background-position: 0; }
-#content .navi_banner > .navi_number > li:nth-child(2) > a { background-position: -65px; }
-#content .navi_banner > .navi_number > li:nth-child(3) > a { background-position: -135px; }
-#content .navi_banner > .navi_number > li:nth-child(4) > a { background-position: -205px; }
-#content .navi_banner > .navi_number > li:nth-child(5) > a { background-position: -275px; }
-#content .navi_banner > .navi_number > li:nth-child(6) > a { background-position: -345px; }
-#content .navi_banner > .navi_number > li:nth-child(7) > a { background-position: -414px; }
-#content .navi_banner > .button { float: left; }
-#content .navi_banner > .button > li { width: 25px; height: 25px; float: left; }
-#content .navi_banner > .button > li > a { width: 24px; height: 25px; background-image: url("../img/up_down.png"); }
-#content .navi_banner > .button > li:nth-child(1) > a { background-position: -24px; }
-#content .navi_banner > .button > li:nth-child(2) > a { background-position: 0; }
-#content .center { width: 100%; height: 300px; margin-top: 10px; background-image: url("../img/center.png"); float: left; background-position: center; background-repeat: no-repeat; }
+#content .yearBox { width: 100%; height: auto; float: left; }
+#content .yearBox .navi_banner { width: 100%; height: 100%; margin-top: 50px; }
+#content .yearBox .navi_banner > #tabs { width: 100%; height: 31px; }
+#content .yearBox .navi_banner > #tabs > ul { width: 70%; height: 100%; margin: 0 auto; }
+#content .yearBox .navi_banner > #tabs > ul > li { width: calc(100% / 6); height: 100%; float: left; }
+#content .yearBox .navi_banner > #tabs > ul > li > a { width: 100%; height: 100%; text-align: center; line-height: 150%; font-size: 1.5em; font-weight: bold; color: #999; border-bottom: 2px dashed #999; }
+#content .yearBox .navi_banner > #tabs > ul > li > a:hover { color: #333; font-weight: bold; border-bottom: 2px solid #333; }
+#content .yearBox .navi_banner > #tabs > div { width: 100%; height: auto; /*float:left;*/ margin-top: 30px; }
+#content .yearBox .navi_banner > #tabs > #Box1 { width: 100%; height: 662px; background-image: url("../img/2016img.png"); background-position: center; background-repeat: no-repeat; }
+#content .yearBox .navi_banner > #tabs > #Box2 { width: 100%; height: 1500px; background-image: url("../img/2015img.png"); background-position: center; background-repeat: no-repeat; }
+#content .yearBox .navi_banner > #tabs > #Box3 { width: 100%; height: 1530px; background-image: url("../img/2014img.png"); background-position: center; background-repeat: no-repeat; }
+#content .yearBox .navi_banner > #tabs > #Box4 { width: 100%; height: 1530px; background-image: url("../img/2013img.png"); background-position: center; background-repeat: no-repeat; }
+#content .yearBox .navi_banner > #tabs > #Box5 { width: 100%; height: 1530px; background-image: url("../img/2012img.png"); background-position: center; background-repeat: no-repeat; }
+#content .yearBox .navi_banner > #tabs > #Box6 { width: 100%; height: 1530px; background-image: url("../img/2011img.png"); background-position: center; background-repeat: no-repeat; }
 
 /*# sourceMappingURL=sub_about.css.map */

@@ -1,58 +1,327 @@
-#wrap { width: 100%; height: auto; }
+html, body { width: 100%; height: auto; margin: 0 auto; }
 
-/*-----main------*/
-#main { width: 100%; height: 500px; margin: 0 auto; margin-top: 15px; position: relative; }
-#main .main_ban { overflow: hidden; width: 300%; height: 500px; position: absolute; z-index: -100; margin-left: -100%; }
-#main .main_ban > li { width: calc(100% / 3); height: 100%; float: left; }
-#main .main_ban .main_img { background-image: url("../img/conter/main_y.png"); }
-#main .main_ban .main_img > a { background-image: url("../img/conter/main_1.png"); }
-#main .main_ban .main_2_img { background-color: #f4f2f2; }
-#main .main_ban .main_2_img > a { background-image: url("../img/conter/main_2.png"); }
-#main .main_ban .main_3_img > a { background-image: url("../img/conter/main_3.png"); }
-#main .cen_butt { width: 100px; height: 10px; position: absolute; bottom: 10px; left: 50%; margin-left: -25px; z-index: 30; }
-#main .cen_butt > li { width: 15px; height: 15px; margin-top: -10px; float: left; margin-right: 10px; border-radius: 50%; background-color: #aaa; }
-#main .cen_butt > li > a:hover { width: 15px; height: 15px; float: left; margin-right: 10px; border-radius: 50%; background-color: #666; }
-#main .cen_butt > li:last-child { margin-right: 0; }
-#main .main_but .m_left_but { width: 30px; height: 320px; float: left; margin-left: 20%; }
-#main .main_but .m_left_but > a { background-image: url("../img/conter/left_butt.png"); background-position: bottom; }
-#main .main_but .m_re_but { width: 30px; height: 320px; float: right; margin-right: 20%; }
-#main .main_but .m_re_but > a { background-image: url("../img/conter/right_butt.png"); background-position: bottom; }
+#wrap { width: 100%; height: auto; margin: 0 auto; }
 
-/*-------container_1--------*/
-#container_1 { width: 720px; height: 125px; margin-top: 50px; }
-#container_1 #top_1 { width: 360px; height: 100%; border: 1px solid #ccc; float: left; }
-#container_1 #top_1 > h3 { width: 360px; height: 20px; font-size: 1rem; text-align: center; font-weight: bold; margin-top: 10px; color: #444; }
-#container_1 #top_1 > .topBox_1 { width: 360px; height: 70px; margin: 0 auto; margin-top: 5px; }
-#container_1 #top_1 > .topBox_1 > li { width: 70px; height: 70px; float: left; margin-left: 10px; }
-#container_1 #top_1 > .topBox_1 > li > a { width: 70px; height: 70px; background-image: url("../img/banner/icon.png"); }
-#container_1 #top_1 > .topBox_1 > li > a:hover { background-image: url("../img/banner/icon_right.png"); }
-#container_1 #top_1 > .topBox_1 > li:nth-child(5) { width: 15px; height: 70px; float: right; margin-right: 10px; }
-#container_1 #top_1 > .topBox_1 > li:nth-child(1) > a { background-position: 0px; }
-#container_1 #top_1 > .topBox_1 > li:nth-child(2) > a { background-position: -79px; }
-#container_1 #top_1 > .topBox_1 > li:nth-child(3) > a { background-position: -159px; }
-#container_1 #top_1 > .topBox_1 > li:nth-child(4) > a { background-position: -238px; }
-#container_1 #top_1 > .topBox_1 > li:nth-child(5) > a { width: 15px; background-position: -318px; }
-#container_1 #top_2, #container_1 #top_3 { width: 168px; height: 100%; border: 1px solid #ccc; float: left; margin-left: 9px; }
-#container_1 #top_2 > h3, #container_1 #top_3 > h3 { width: 168px; height: 20px; font-size: 1rem; text-align: center; font-weight: bold; margin-top: 5px; color: #444; }
-#container_1 #top_2 > p, #container_1 #top_3 > p { font-size: 0.8rem; text-align: right; margin-right: 5px; text-decoration: underline; }
-#container_1 .topBox_2 > li { margin-top: 5px; height: 90px; }
-#container_1 .topBox_2 > li > a { width: 100%; height: 90px; background-image: url("../img/banner/sho.png"); }
-#container_1 .topBox_3 > li { height: 80px; }
-#container_1 .topBox_3 > li > a { background-image: url("../img/banner/coup.png"); }
-
-/*------container_2-------*/
-#container_2 { width: 660px; height: 550px; }
-#container_2 > div { width: 215px; height: 180px; float: left; border: 1px solid #ccc; }
-#container_2 > .ev_new { width: 100%; height: 90px; background-image: url("../img/banner/ev_so.png"); display: block; background-position: center bottom; background-repeat: no-repeat; margin-bottom: 20px; border: 0; }
-#container_2 .youtube { width: 215px; height: 180px; }
-#container_2 .dosirak { background-image: url("../img/banner/dosirak.png"); margin: 0 4px 4px; }
-#container_2 .dosirak > a:hover { background-image: url("../img/banner/dosirak_on.png"); display: block; background-position: bottom; background-repeat: no-repeat; }
-#container_2 .pbBanner { background-image: url("../img/banner/pb.png"); position: relative; float: right; }
-#container_2 .pbBanner > a:hover { background-image: url("../img/banner/pb_on.png"); display: block; background-position: bottom; background-repeat: no-repeat; }
-#container_2 .pbBanner > .button { width: 50px; height: 10px; color: #ffa; position: absolute; left: 50%; margin-left: -25px; z-index: -50; }
-#container_2 .story { width: 436px; height: 180px; background-image: url("../img/banner/story.png"); margin-right: 4px; }
-#container_2 .story > p > a { margin-top: 35%; margin-right: 20px; width: 55px; height: 18px; float: right; background-image: url("../img/banner/story_butt.png"); }
-#container_2 .center { background-image: url("../img/banner/center.png"); }
-#container_2 .center > a:hover { background-image: url("../img/banner/center_on.png"); display: block; background-position: bottom; background-repeat: no-repeat; }
+@media screen and (min-width: 960px) { #mainBanner { width: 100%; height: 450px; position: relative; margin: 0 auto; margin-top: 20px; /*
+.cen_butt{ width:100px;  height: 10px; position:absolute;  bottom: 10px;  left: 50%;  margin-left: -25px; z-index: 30;  
+>li{ width: 15px;  height: 15px;  float: left;  margin-right: 10px;  border-radius: 50%;  background-color: #aaa;  >.indWidth{width:60px;} >a:hover{ width: 15px; height: 15px;  float: left;  margin-right: 10px;  border-radius: 50%;  background-color: #666;   }
+&:last-child{margin-right: 0;} }//li
+}//.cen_butt
+*/ }
+  #mainBanner #main { overflow: hidden; width: 100%; height: 100%; position: absolute; }
+  #mainBanner #main .main_ban { width: 300%; height: 450px; position: absolute; z-index: -100; margin-left: -100%; }
+  #mainBanner #main .main_ban > li { width: calc(100% / 3); height: 100%; float: left; }
+  #mainBanner #main .main_ban .main_img { background-color: #f4f2f2; }
+  #mainBanner #main .main_ban .main_img > a { background-image: url("../img/conter/main_3.png"); }
+  #mainBanner #main .main_ban .main_2_img { background-image: url("../img/conter/main_y.png"); }
+  #mainBanner #main .main_ban .main_2_img > a { background-image: url("../img/conter/main_1.png"); }
+  #mainBanner #main .main_ban .main_3_img > a { background-image: url("../img/conter/main_2.png"); }
+  #mainBanner .main_but { width: 100%; height: 100%; position: absolute; }
+  #mainBanner .main_but .m_left_but { width: 30px; height: 100%; float: left; margin-left: 10%; }
+  #mainBanner .main_but .m_left_but > a { background-image: url("../img/conter/left_butt.png"); background-position: center; }
+  #mainBanner .main_but .m_re_but { width: 30px; height: 100%; float: right; margin-right: 10%; }
+  #mainBanner .main_but .m_re_but > a { background-image: url("../img/conter/right_butt.png"); background-position: center; }
+  /*-------container_1--------*/
+  #container_1 { width: 100%; height: 220px; margin-top: 50px; }
+  #container_1 #bannerText { width: 200px; height: 45px; margin: 0 auto; text-align: center; border: 1px solid #bbb; border-width: 1px 0; list-style-type: none; margin-bottom: 20px; }
+  #container_1 #bannerText > p { font-size: 15pt; color: #1b932a; font-weight: 800; margin-top: 10px; }
+  #container_1 .topBox { width: 730px; height: 130px; margin: 0 auto; }
+  #container_1 .topBox #top_1 { width: 360px; height: 100%; border: 1px solid #ccc; float: left; }
+  #container_1 .topBox #top_1 > h3 { width: 360px; height: 20px; font-size: 1rem; text-align: center; font-weight: bold; margin-top: 10px; color: #444; }
+  #container_1 .topBox #top_1 > .topBox_1 { width: 360px; height: 100%; margin: 0 auto; margin-top: 5px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li { width: 70px; height: 70px; float: left; margin-left: 10px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li > a { width: 70px; height: 70px; background-image: url("../img/banner/icon.png"); }
+  #container_1 .topBox #top_1 > .topBox_1 > li > a:hover { background-image: url("../img/banner/icon_right.png"); }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(5) { width: 15px; height: 70px; float: right; margin-right: 10px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(1) > a { background-position: 0px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(2) > a { background-position: -79px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(3) > a { background-position: -159px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(4) > a { background-position: -238px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(5) > a { width: 15px; background-position: -318px; }
+  #container_1 .topBox #top_2, #container_1 .topBox #top_3 { width: 168px; height: 100%; border: 1px solid #ccc; float: left; margin-left: 9px; }
+  #container_1 .topBox #top_2 > h3, #container_1 .topBox #top_3 > h3 { width: 168px; height: 20px; font-size: 1rem; text-align: center; font-weight: bold; margin-top: 5px; color: #444; }
+  #container_1 .topBox #top_2 > p, #container_1 .topBox #top_3 > p { font-size: 0.8rem; text-align: right; margin-right: 5px; text-decoration: underline; }
+  #container_1 .topBox .topBox_2 > li { margin-top: 5px; height: 90px; }
+  #container_1 .topBox .topBox_2 > li > a { width: 100%; height: 90px; background-image: url("../img/banner/sho.png"); }
+  #container_1 .topBox .topBox_3 > li { height: 80px; }
+  #container_1 .topBox .topBox_3 > li > a { background-image: url("../img/banner/coup.png"); }
+  /*------container_2-------*/
+  #container_2 { width: 100%; height: 550px; margin: 0 auto; }
+  #container_2 > .ev_newText { width: 200px; height: 45px; margin: 0 auto; text-align: center; border: 1px solid #bbb; border-width: 1px 0; list-style-type: none; margin-bottom: 30px; margin-top: 30px; }
+  #container_2 > .ev_newText > p { font-size: 15pt; color: #e65c35; font-weight: 800; margin-top: 10px; }
+  #container_2 #evBox { width: 665px; height: 100%; margin: 0 auto; }
+  #container_2 #evBox > div { width: 215px; height: 180px; float: left; border: 1px solid #ccc; }
+  #container_2 #evBox .youtube > iframe { width: 215px; height: 180px; }
+  #container_2 #evBox .dosirak { background-color: #dbceab; background-image: url("../img/banner/dosirak.png"); background-position: center; background-repeat: no-repeat; margin: 0 5px; }
+  #container_2 #evBox .dosirak:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 80px; }
+  #container_2 #evBox .dosirak:hover a > span { width: 100%; height: 100%; font-size: 0.9em; text-align: center; padding-top: 15px; }
+  #container_2 #evBox .dosirak:hover a > span > p { font-size: 1.2em; font-weight: 600; padding: 5px 0; }
+  #container_2 #evBox .pbBanner { background-color: #f4f4f4; background-image: url("../img/banner/pb.png"); background-position: center; background-repeat: no-repeat; /*>.button{ width: 50px;  height: 10px; color:#ffa; position:absolute;  left: 50%;  margin-left: -25px; z-index: -50;}*/ }
+  #container_2 #evBox .pbBanner:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 80px; }
+  #container_2 #evBox .pbBanner:hover a > span { width: 100%; height: 100%; font-size: 0.9em; text-align: center; padding-top: 15px; }
+  #container_2 #evBox .pbBanner:hover a > span > p { font-size: 1.2em; font-weight: 600; padding: 5px 0; }
+  #container_2 #evBox .center { background-color: #fff; background-image: url("../img/banner/center.png"); background-position: center; background-repeat: no-repeat; margin: 5px 5px 0 0; }
+  #container_2 #evBox .center:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 78px; }
+  #container_2 #evBox .center:hover a > span { width: 100%; height: 100%; font-size: 1.2em; text-align: center; padding-top: 20%; font-weight: bold; }
+  #container_2 #evBox .story { width: 66%; height: 180px; float: left; margin-top: 5px; }
+  #container_2 #evBox .story > .storyimg { width: 70%; height: 100%; background-image: url("../img/banner/story_1.png"); background-size: cover; background-repeat: no-repeat; float: left; }
+  #container_2 #evBox .story > .storytext { float: left; width: calc(30% - 5px); height: calc(100% - 10px); padding: 10px 0 0 5px; }
+  #container_2 #evBox .story > .storytext > dt { font-size: 1.1em; font-weight: 600; padding: 5px 0; color: #1b932a; }
+  #container_2 #evBox .story > .storytext > dd { text-align: left; font-size: 0.9em; }
+  #container_2 #evBox .story > .storytext > dd > button { float: right; margin: 20px 5px 0 0; background-color: #333; color: #fff; cursor: pointer; } }
+@media screen and (min-width: 768px) and (max-width: 959px) { #mainBanner { width: 100%; height: 450px; position: relative; margin: 0 auto; margin-top: 20px; }
+  #mainBanner #main { overflow: hidden; width: 100%; height: 100%; position: absolute; }
+  #mainBanner #main .main_ban { width: 300%; height: 450px; position: absolute; z-index: -100; margin-left: -100%; }
+  #mainBanner #main .main_ban > li { width: calc(100% / 3); height: 100%; float: left; }
+  #mainBanner #main .main_ban .main_img > a { background-image: url("../img/conter/main_33.png"); }
+  #mainBanner #main .main_ban .main_2_img > a { background-image: url("../img/conter/main_11.png"); }
+  #mainBanner #main .main_ban .main_3_img > a { background-image: url("../img/conter/main_22.png"); }
+  #mainBanner .cen_butt { width: 100px; height: 10px; position: absolute; bottom: 10px; left: 50%; margin-left: -25px; z-index: 30; }
+  #mainBanner .cen_butt > li { width: 15px; height: 15px; float: left; margin-right: 10px; border-radius: 50%; background-color: #aaa; }
+  #mainBanner .cen_butt > li > .indWidth { width: 60px; }
+  #mainBanner .cen_butt > li > a:hover { width: 15px; height: 15px; float: left; margin-right: 10px; border-radius: 50%; background-color: #666; }
+  #mainBanner .cen_butt > li:last-child { margin-right: 0; }
+  #mainBanner .main_but { width: 100%; height: 100%; position: absolute; }
+  #mainBanner .main_but .m_left_but { width: 30px; height: 100%; float: left; margin-left: 10%; }
+  #mainBanner .main_but .m_left_but > a { background-image: url("../img/conter/left_butt.png"); background-position: center; }
+  #mainBanner .main_but .m_re_but { width: 30px; height: 100%; float: right; margin-right: 10%; }
+  #mainBanner .main_but .m_re_but > a { background-image: url("../img/conter/right_butt.png"); background-position: center; }
+  /*-------container_1--------*/
+  #container_1 { width: 100%; height: 220px; margin-top: 5.20833vw; }
+  #container_1 #bannerText { width: 200px; height: 45px; margin: 0 auto; text-align: center; border: 1px solid #bbb; border-width: 1px 0; list-style-type: none; margin-bottom: 20px; }
+  #container_1 #bannerText > p { font-size: 1.2em; color: #1b932a; font-weight: 800; margin-top: 10px; }
+  #container_1 .topBox { width: 730px; height: 130px; margin: 0 auto; }
+  #container_1 .topBox #top_1 { width: 360px; height: 100%; border: 1px solid #ccc; float: left; }
+  #container_1 .topBox #top_1 > h3 { width: 360px; height: 20px; font-size: 1rem; text-align: center; font-weight: bold; margin-top: 10px; color: #444; }
+  #container_1 .topBox #top_1 > .topBox_1 { width: 360px; height: 100%; margin: 0 auto; margin-top: 5px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li { width: 70px; height: 70px; float: left; margin-left: 10px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li > a { width: 70px; height: 70px; background-image: url("../img/banner/icon.png"); }
+  #container_1 .topBox #top_1 > .topBox_1 > li > a:hover { background-image: url("../img/banner/icon_right.png"); }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(5) { width: 15px; height: 70px; float: right; margin-right: 10px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(1) > a { background-position: 0px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(2) > a { background-position: -79px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(3) > a { background-position: -159px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(4) > a { background-position: -238px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(5) > a { width: 15px; background-position: -318px; }
+  #container_1 .topBox #top_2, #container_1 .topBox #top_3 { width: 168px; height: 100%; border: 1px solid #ccc; float: left; margin-left: 9px; }
+  #container_1 .topBox #top_2 > h3, #container_1 .topBox #top_3 > h3 { width: 168px; height: 20px; font-size: 1rem; text-align: center; font-weight: bold; margin-top: 5px; color: #444; }
+  #container_1 .topBox #top_2 > p, #container_1 .topBox #top_3 > p { font-size: 0.8rem; text-align: right; margin-right: 5px; text-decoration: underline; }
+  #container_1 .topBox .topBox_2 > li { margin-top: 5px; height: 90px; }
+  #container_1 .topBox .topBox_2 > li > a { width: 100%; height: 90px; background-image: url("../img/banner/sho.png"); }
+  #container_1 .topBox .topBox_3 > li { height: 80px; }
+  #container_1 .topBox .topBox_3 > li > a { background-image: url("../img/banner/coup.png"); }
+  /*------container_2-------*/
+  #container_2 { width: 100%; height: 550px; margin: 0 auto; }
+  #container_2 > .ev_newText { width: 200px; height: 45px; margin: 0 auto; text-align: center; border: 1px solid #bbb; border-width: 1px 0; list-style-type: none; margin-bottom: 30px; margin-top: 30px; }
+  #container_2 > .ev_newText > p { font-size: 15pt; color: #e65c35; font-weight: 800; margin-top: 10px; }
+  #container_2 #evBox { width: 665px; height: 100%; margin: 0 auto; }
+  #container_2 #evBox > div { width: 215px; height: 180px; float: left; border: 1px solid #ccc; }
+  #container_2 #evBox .youtube > iframe { width: 215px; height: 180px; }
+  #container_2 #evBox .dosirak { background-color: #dbceab; background-image: url("../img/banner/dosirak.png"); background-position: center; background-repeat: no-repeat; margin: 0 5px; }
+  #container_2 #evBox .dosirak:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 80px; }
+  #container_2 #evBox .dosirak:hover a > span { width: 100%; height: 100%; font-size: 0.9em; text-align: center; padding-top: 15px; }
+  #container_2 #evBox .dosirak:hover a > span > p { font-size: 1.2em; font-weight: 600; padding: 5px 0; }
+  #container_2 #evBox .pbBanner { background-color: #f4f4f4; background-image: url("../img/banner/pb.png"); background-position: center; background-repeat: no-repeat; /*>.button{ width: 50px;  height: 10px; color:#ffa; position:absolute;  left: 50%;  margin-left: -25px; z-index: -50;}*/ }
+  #container_2 #evBox .pbBanner:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 80px; }
+  #container_2 #evBox .pbBanner:hover a > span { width: 100%; height: 100%; font-size: 0.9em; text-align: center; padding-top: 15px; }
+  #container_2 #evBox .pbBanner:hover a > span > p { font-size: 1.2em; font-weight: 600; padding: 5px 0; }
+  #container_2 #evBox .center { background-color: #fff; background-image: url("../img/banner/center.png"); background-position: center; background-repeat: no-repeat; margin: 5px 5px 0 0; }
+  #container_2 #evBox .center:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 78px; }
+  #container_2 #evBox .center:hover a > span { width: 100%; height: 100%; font-size: 1.2em; text-align: center; padding-top: 20%; font-weight: bold; }
+  #container_2 #evBox .story { width: 66%; height: 180px; float: left; margin-top: 5px; }
+  #container_2 #evBox .story > .storyimg { width: 70%; height: 100%; background-image: url("../img/banner/story_1.png"); background-size: cover; background-repeat: no-repeat; float: left; }
+  #container_2 #evBox .story > .storytext { float: left; width: calc(30% - 5px); height: calc(100% - 10px); padding: 10px 0 0 5px; }
+  #container_2 #evBox .story > .storytext > dt { font-size: 1.1em; font-weight: 600; padding: 5px 0; color: #1b932a; }
+  #container_2 #evBox .story > .storytext > dd { text-align: left; font-size: 0.9em; }
+  #container_2 #evBox .story > .storytext > dd > button { float: right; margin: 20px 5px 0 0; background-color: #333; color: #fff; cursor: pointer; } }
+@media screen and (min-width: 639px) and (max-width: 767px) { #mainBanner { width: 100%; height: 46.875vw; position: relative; margin: 0 auto; margin-top: 2.08333vw; }
+  #mainBanner #main { overflow: hidden; width: 100%; height: 100%; position: absolute; }
+  #mainBanner #main .main_ban { width: 300%; height: 46.875vw; position: absolute; z-index: -100; margin-left: -100%; }
+  #mainBanner #main .main_ban > li { width: calc(100% / 3); height: 100%; float: left; }
+  #mainBanner #main .main_ban .main_img > a { background-image: url("../img/conter/main_33.png"); background-size: 100%; }
+  #mainBanner #main .main_ban .main_2_img > a { background-image: url("../img/conter/main_11.png"); background-size: 100%; }
+  #mainBanner #main .main_ban .main_3_img > a { background-image: url("../img/conter/main_22.png"); background-size: 100%; }
+  #mainBanner .cen_butt { width: 100px; height: 10px; position: absolute; bottom: 10px; left: 50%; margin-left: -25px; z-index: 30; }
+  #mainBanner .cen_butt > li { width: 15px; height: 15px; float: left; margin-right: 10px; border-radius: 50%; background-color: #aaa; }
+  #mainBanner .cen_butt > li > .indWidth { width: 60px; }
+  #mainBanner .cen_butt > li > a:hover { width: 15px; height: 15px; float: left; margin-right: 10px; border-radius: 50%; background-color: #666; }
+  #mainBanner .cen_butt > li:last-child { margin-right: 0; }
+  #mainBanner .main_but { width: 100%; height: 100%; position: absolute; }
+  #mainBanner .main_but .m_left_but { width: 30px; height: 100%; float: left; margin-left: 10%; }
+  #mainBanner .main_but .m_left_but > a { background-image: url("../img/conter/left_butt.png"); background-position: center; }
+  #mainBanner .main_but .m_re_but { width: 30px; height: 100%; float: right; margin-right: 10%; }
+  #mainBanner .main_but .m_re_but > a { background-image: url("../img/conter/right_butt.png"); background-position: center; }
+  /*-------container_1--------*/
+  #container_1 { width: 600px; height: 400px; margin-top: 50px; }
+  #container_1 #bannerText { width: 200px; height: 45px; margin: 0 auto; text-align: center; border: 1px solid #bbb; border-width: 1px 0; list-style-type: none; margin-bottom: 30px; }
+  #container_1 #bannerText > p { font-size: 1.2em; color: #1b932a; font-weight: 800; margin-top: 10px; }
+  #container_1 .topBox { width: 500px; height: 280px; margin: 0 auto; }
+  #container_1 .topBox #top_1 { width: 100%; height: 130px; box-sizing: border-box; border: 1px solid #ccc; float: left; }
+  #container_1 .topBox #top_1 > h3 { width: 100%; height: 20px; font-size: 1rem; text-align: center; font-weight: bold; margin-top: 10px; color: #444; }
+  #container_1 .topBox #top_1 > .topBox_1 { width: 360px; height: 90px; margin: 0 auto; margin-top: 5px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li { width: 70px; height: 70px; float: left; margin-left: 10px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li > a { width: 70px; height: 70px; background-image: url("../img/banner/icon.png"); }
+  #container_1 .topBox #top_1 > .topBox_1 > li > a:hover { background-image: url("../img/banner/icon_right.png"); }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(5) { width: 15px; height: 70px; float: right; margin-right: 10px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(1) > a { background-position: 0px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(2) > a { background-position: -79px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(3) > a { background-position: -159px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(4) > a { background-position: -238px; }
+  #container_1 .topBox #top_1 > .topBox_1 > li:nth-child(5) > a { width: 15px; background-position: -318px; }
+  #container_1 .topBox #top_2 { float: left; }
+  #container_1 .topBox #top_3 { float: right; }
+  #container_1 .topBox #top_2, #container_1 .topBox #top_3 { width: 48%; height: 130px; box-sizing: border-box; border: 1px solid #ccc; margin-top: 15px; }
+  #container_1 .topBox #top_2 > h3, #container_1 .topBox #top_3 > h3 { width: 100%; height: 20px; font-size: 1rem; text-align: center; font-weight: bold; margin-top: 5px; color: #444; }
+  #container_1 .topBox #top_2 > p, #container_1 .topBox #top_3 > p { width: 100%; font-size: 0.8rem; text-align: center; text-decoration: underline; }
+  #container_1 .topBox .topBox_2 > li { margin-top: 5px; height: 90px; }
+  #container_1 .topBox .topBox_2 > li > a { width: 100%; height: 90px; background-image: url("../img/banner/sho.png"); }
+  #container_1 .topBox .topBox_3 > li { height: 80px; }
+  #container_1 .topBox .topBox_3 > li > a { background-image: url("../img/banner/coup.png"); }
+  /*------container_2-------*/
+  #container_2 { width: 500px; height: 700px; margin: 0 auto; }
+  #container_2 > .ev_newText { width: 200px; height: 45px; margin: 0 auto; text-align: center; border: 1px solid #bbb; border-width: 1px 0; list-style-type: none; margin-bottom: 30px; margin-top: 30px; }
+  #container_2 > .ev_newText > p { font-size: 15pt; color: #e65c35; font-weight: 800; margin-top: 10px; }
+  #container_2 #evBox { width: 100%; height: 100%; margin: 0 auto; }
+  #container_2 #evBox > div { width: 48%; height: 180px; float: left; box-sizing: border-box; border: 1px solid #ccc; }
+  #container_2 #evBox .pbBanner, #container_2 #evBox .center, #container_2 #evBox .story { margin-top: 20px; }
+  #container_2 #evBox .youtube > iframe { width: 100%; height: 180px; }
+  #container_2 #evBox .dosirak { background-color: #dbceab; background-image: url("../img/banner/dosirak.png"); background-position: center; background-repeat: no-repeat; float: right; }
+  #container_2 #evBox .dosirak:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 78px; }
+  #container_2 #evBox .dosirak:hover a > span { width: 100%; height: 100%; font-size: 1em; text-align: center; padding-top: 15px; }
+  #container_2 #evBox .dosirak:hover a > span > p { font-size: 1.2em; font-weight: 600; padding: 5px 0; }
+  #container_2 #evBox .pbBanner { background-color: #f4f4f4; background-image: url("../img/banner/pb.png"); background-position: center; background-repeat: no-repeat; }
+  #container_2 #evBox .pbBanner:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 78px; }
+  #container_2 #evBox .pbBanner:hover a > span { width: 100%; height: 100%; font-size: 1em; text-align: center; padding-top: 15px; }
+  #container_2 #evBox .pbBanner:hover a > span > p { font-size: 1.2em; font-weight: 600; padding: 5px 0; }
+  #container_2 #evBox .center { float: right; background-color: #fff; background-image: url("../img/banner/center.png"); background-position: center; background-repeat: no-repeat; }
+  #container_2 #evBox .center:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 78px; }
+  #container_2 #evBox .center:hover a > span { width: 100%; height: 100%; font-size: 1.2em; text-align: center; padding-top: 20%; font-weight: bold; }
+  #container_2 #evBox .story { width: 100%; height: 200px; float: left; }
+  #container_2 #evBox .story > .storyimg { width: 70%; height: 100%; background-image: url("../img/banner/story_1.png"); background-size: contain; background-repeat: no-repeat; float: left; }
+  #container_2 #evBox .story > .storytext { float: left; width: calc(30% - 5px); height: calc(100% - 20px); padding: 20px 0 0 5px; }
+  #container_2 #evBox .story > .storytext > dt { font-size: 1.1em; font-weight: 600; padding: 5px 0; color: #1b932a; }
+  #container_2 #evBox .story > .storytext > dd { text-align: left; font-size: 0.9em; }
+  #container_2 #evBox .story > .storytext > dd > button { float: right; margin: 20px 5px 0 0; background-color: #333; color: #fff; cursor: pointer; }
+  #container_2 #evBox .story > .storytext > p > a { margin-top: 35%; margin-right: 20px; width: 55px; height: 18px; float: right; background-image: url("../img/banner/story_butt.png"); } }
+@media screen and (min-width: 479px) and (max-width: 640px) { #mainBanner { width: 100%; height: 55vw; position: relative; margin: 0 auto; /*margin-top:2.083333333333333vw20px;*/ }
+  #mainBanner #main { overflow: hidden; width: 100%; height: 100%; position: absolute; }
+  #mainBanner #main .main_ban { width: 300%; height: 100%; position: absolute; z-index: -100; margin-left: -100%; }
+  #mainBanner #main .main_ban > li { width: calc(100% / 3); height: 100%; float: left; }
+  #mainBanner #main .main_ban .main_img > a { background-image: url("../img/conter/main_33.png"); background-size: 120%; }
+  #mainBanner #main .main_ban .main_2_img > a { background-image: url("../img/conter/main_11.png"); background-size: 120%; }
+  #mainBanner #main .main_ban .main_3_img > a { background-image: url("../img/conter/main_22.png"); background-size: 120%; }
+  /*-------container_1--------*/
+  #container_1 { width: 93.75vw; height: 62.5vw; margin-top: 50px; }
+  #container_1 #bannerText { width: 200px; height: 45px; margin: 0 auto; text-align: center; border: 1px solid #bbb; border-width: 1px 0; list-style-type: none; margin-bottom: 30px; }
+  #container_1 #bannerText > p { font-size: 1.2em; color: #1b932a; font-weight: 800; margin-top: 10px; }
+  #container_1 .topBox { width: 78.125vw; height: 43.75vw; margin: 0 auto; }
+  #container_1 .topBox #top_1 { width: 100%; height: 130px; box-sizing: border-box; border: 1px solid #ccc; float: left; }
+  #container_1 .topBox #top_1 > h3 { width: 100%; height: 20px; font-size: 1rem; text-align: center; font-weight: bold; margin-top: 10px; color: #444; }
+  #container_1 .topBox #top_1 > .topBox_1 { width: 62.5vw; height: 14.0625vw; margin: 0 auto; margin-top: 0.78125vw; }
+  #container_1 .topBox #top_1 > .topBox_1 > li { width: 10.9375vw; height: 10.9375vw; float: left; margin-left: 2.34375vw; }
+  #container_1 .topBox #top_1 > .topBox_1 > li > a { width: 100%; height: 100%; display: block; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon1 { background-image: url("../img/banner/topIcon1.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon1:hover { background-image: url("../img/banner/iconHover1.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon2 { background-image: url("../img/banner/topIcon2.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon2:hover { background-image: url("../img/banner/iconHover2.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon3 { background-image: url("../img/banner/topIcon3.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon3:hover { background-image: url("../img/banner/iconHover3.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon4 { background-image: url("../img/banner/topIcon4.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon4:hover { background-image: url("../img/banner/iconHover4.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topmo { width: 10px; background-image: url("../img/banner/topIcon5.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_2 { float: left; }
+  #container_1 .topBox #top_3 { float: right; }
+  #container_1 .topBox #top_2, #container_1 .topBox #top_3 { width: 48%; height: 130px; box-sizing: border-box; border: 1px solid #ccc; margin-top: 15px; }
+  #container_1 .topBox #top_2 > h3, #container_1 .topBox #top_3 > h3 { width: 100%; height: 20px; font-size: 1rem; text-align: center; font-weight: bold; margin-top: 5px; color: #444; }
+  #container_1 .topBox #top_2 > p, #container_1 .topBox #top_3 > p { width: 100%; font-size: 0.8rem; text-align: center; text-decoration: underline; }
+  #container_1 .topBox .topBox_2 > li { margin-top: 5px; height: 90px; }
+  #container_1 .topBox .topBox_2 > li > a { width: 100%; height: 90px; background-image: url("../img/banner/sho.png"); }
+  #container_1 .topBox .topBox_3 > li { height: 80px; }
+  #container_1 .topBox .topBox_3 > li > a { background-image: url("../img/banner/coup.png"); }
+  /*------container_2-------*/
+  #container_2 { width: 500px; height: 700px; margin: 0 auto; }
+  #container_2 > .ev_newText { width: 200px; height: 45px; margin: 0 auto; text-align: center; border: 1px solid #bbb; border-width: 1px 0; list-style-type: none; margin-bottom: 30px; margin-top: 30px; }
+  #container_2 > .ev_newText > p { font-size: 15pt; color: #e65c35; font-weight: 800; margin-top: 10px; }
+  #container_2 #evBox { width: 100%; height: 100%; margin: 0 auto; }
+  #container_2 #evBox > div { width: 48%; height: 180px; float: left; box-sizing: border-box; border: 1px solid #ccc; }
+  #container_2 #evBox .pbBanner, #container_2 #evBox .center, #container_2 #evBox .story { margin-top: 20px; }
+  #container_2 #evBox .youtube > iframe { width: 100%; height: 180px; }
+  #container_2 #evBox .dosirak { background-color: #dbceab; background-image: url("../img/banner/dosirak.png"); background-position: center; background-repeat: no-repeat; float: right; }
+  #container_2 #evBox .dosirak:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 78px; }
+  #container_2 #evBox .dosirak:hover a > span { width: 100%; height: 100%; font-size: 1em; text-align: center; padding-top: 15px; }
+  #container_2 #evBox .dosirak:hover a > span > p { font-size: 1.2em; font-weight: 600; padding: 5px 0; }
+  #container_2 #evBox .pbBanner { background-color: #f4f4f4; background-image: url("../img/banner/pb.png"); background-position: center; background-repeat: no-repeat; }
+  #container_2 #evBox .pbBanner:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 78px; }
+  #container_2 #evBox .pbBanner:hover a > span { width: 100%; height: 100%; font-size: 1em; text-align: center; padding-top: 15px; }
+  #container_2 #evBox .pbBanner:hover a > span > p { font-size: 1.2em; font-weight: 600; padding: 5px 0; }
+  #container_2 #evBox .center { float: right; background-color: #fff; background-image: url("../img/banner/center.png"); background-position: center; background-repeat: no-repeat; }
+  #container_2 #evBox .center:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 78px; }
+  #container_2 #evBox .center:hover a > span { width: 100%; height: 100%; font-size: 1.2em; text-align: center; padding-top: 20%; font-weight: bold; }
+  #container_2 #evBox .story { width: 100%; height: 200px; float: left; }
+  #container_2 #evBox .story > .storyimg { width: 70%; height: 100%; background-image: url("../img/banner/story_1.png"); background-size: contain; background-repeat: no-repeat; float: left; }
+  #container_2 #evBox .story > .storytext { float: left; width: calc(30% - 5px); height: calc(100% - 20px); padding: 20px 0 0 5px; }
+  #container_2 #evBox .story > .storytext > dt { font-size: 1.1em; font-weight: 600; padding: 5px 0; color: #1b932a; }
+  #container_2 #evBox .story > .storytext > dd { text-align: left; font-size: 0.9em; }
+  #container_2 #evBox .story > .storytext > dd > button { float: right; margin: 20px 5px 0 0; background-color: #333; color: #fff; cursor: pointer; }
+  #container_2 #evBox .story > .storytext > p > a { margin-top: 35%; margin-right: 20px; width: 55px; height: 18px; float: right; background-image: url("../img/banner/story_butt.png"); } }
+@media screen and (min-width: 320px) and (max-width: 480px) { #mainBanner { width: 100%; height: 55vw; position: relative; margin: 0 auto; /*margin-top:2.083333333333333vw20px;*/ }
+  #mainBanner #main { overflow: hidden; width: 100%; height: 100%; position: absolute; }
+  #mainBanner #main .main_ban { width: 300%; height: 100%; position: absolute; z-index: -100; margin-left: -100%; }
+  #mainBanner #main .main_ban > li { width: calc(100% / 3); height: 100%; float: left; }
+  #mainBanner #main .main_ban .main_img > a { background-image: url("../img/conter/main_33.png"); background-size: 120%; }
+  #mainBanner #main .main_ban .main_2_img > a { background-image: url("../img/conter/main_11.png"); background-size: 120%; }
+  #mainBanner #main .main_ban .main_3_img > a { background-image: url("../img/conter/main_22.png"); background-size: 120%; }
+  /*-------container_1--------*/
+  #container_1 { width: 93.75vw; height: auto; margin-top: 50px; }
+  #container_1 #bannerText { width: 200px; height: 45px; margin: 0 auto; text-align: center; border: 1px solid #bbb; border-width: 1px 0; list-style-type: none; margin-bottom: 30px; }
+  #container_1 #bannerText > p { font-size: 1.2em; color: #1b932a; font-weight: 800; margin-top: 10px; }
+  #container_1 .topBox { width: 78.125vw; height: 62.5vw; margin: 0 auto; }
+  #container_1 .topBox #top_1 { width: 100%; height: 27.1vw; box-sizing: border-box; border: 1px solid #ccc; float: left; }
+  #container_1 .topBox #top_1 > h3 { width: 100%; height: 20px; font-size: 1rem; text-align: center; font-weight: bold; margin-top: 10px; color: #444; }
+  #container_1 .topBox #top_1 > .topBox_1 { width: 62.5vw; height: 14.0625vw; margin: 0 auto; margin-top: 1.04vw; }
+  #container_1 .topBox #top_1 > .topBox_1 > li { width: 14.58333vw; height: 14.58333333333333vw; float: left; margin-left: 4.1vw; }
+  #container_1 .topBox #top_1 > .topBox_1 > li > a { width: 100%; height: 100%; display: block; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon1 { background-image: url("../img/banner/topIcon1.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon1:hover { background-image: url("../img/banner/iconHover1.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon2 { background-image: url("../img/banner/topIcon2.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon2:hover { background-image: url("../img/banner/iconHover2.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon3 { background-image: url("../img/banner/topIcon3.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon3:hover { background-image: url("../img/banner/iconHover3.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topicon4 { display: none; }
+  #container_1 .topBox #top_1 > .topBox_1 > .topmo { width: 2.08333vw; background-image: url("../img/banner/topIcon5.png"); background-position: center; background-repeat: no-repeat; background-size: 100%; }
+  #container_1 .topBox #top_2 { float: left; }
+  #container_1 .topBox #top_3 { float: right; }
+  #container_1 .topBox #top_2, #container_1 .topBox #top_3 { width: 48%; height: 27.1vw; box-sizing: border-box; border: 1px solid #ccc; margin-top: 3.125vw; }
+  #container_1 .topBox #top_2 > h3, #container_1 .topBox #top_3 > h3 { width: 100%; height: 20px; font-size: 1rem; text-align: center; font-weight: bold; margin-top: 5px; color: #444; }
+  #container_1 .topBox #top_2 > p, #container_1 .topBox #top_3 > p { /*  width: 100%; font-size: 0.8rem;  text-align: center; text-decoration:underline;*/ display: none; }
+  #container_1 .topBox .topBox_2 > li { margin-top: 5px; height: 17vw; }
+  #container_1 .topBox .topBox_2 > li > a { width: 100%; height: 17vw; background-image: url("../img/banner/sho.png"); background-size: 100%; }
+  #container_1 .topBox .topBox_3 > li { height: 16.66667vw; }
+  #container_1 .topBox .topBox_3 > li > a { background-image: url("../img/banner/coup.png"); background-size: 100%; }
+  /*------container_2-------*/
+  #container_2 { width: 78.125vw; height: 1050px; margin: 0 auto; }
+  #container_2 > .ev_newText { width: 200px; height: 45px; margin: 0 auto; text-align: center; border: 1px solid #bbb; border-width: 1px 0; list-style-type: none; margin-bottom: 30px; margin-top: 30px; }
+  #container_2 > .ev_newText > p { font-size: 15pt; color: #e65c35; font-weight: 800; margin-top: 10px; }
+  #container_2 #evBox { width: 100%; height: 100%; margin: 0 auto; /*.pbBanner,.center,.story{ margin-top:20px;}*/ }
+  #container_2 #evBox > div { width: 100%; height: 150px; float: left; box-sizing: border-box; border: 1px solid #ccc; margin: 10px 0; }
+  #container_2 #evBox .youtube > iframe { width: 100%; height: 150px; }
+  #container_2 #evBox .dosirak { background-color: #dbceab; background-image: url("../img/banner/dosirak.png"); background-position: center; background-repeat: no-repeat; float: right; }
+  #container_2 #evBox .dosirak:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 48px; }
+  #container_2 #evBox .dosirak:hover a > span { width: 100%; height: 100%; font-size: 1em; text-align: center; padding-top: 15px; }
+  #container_2 #evBox .dosirak:hover a > span > p { font-size: 1.2em; font-weight: 600; padding: 5px 0; }
+  #container_2 #evBox .pbBanner { background-color: #f4f4f4; background-image: url("../img/banner/pb.png"); background-position: center; background-repeat: no-repeat; }
+  #container_2 #evBox .pbBanner:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 48px; }
+  #container_2 #evBox .pbBanner:hover a > span { width: 100%; height: 100%; font-size: 1em; text-align: center; padding-top: 15px; }
+  #container_2 #evBox .pbBanner:hover a > span > p { font-size: 1.2em; font-weight: 600; padding: 5px 0; }
+  #container_2 #evBox .center { float: right; background-color: #fff; background-image: url("../img/banner/center.png"); background-position: center; background-repeat: no-repeat; }
+  #container_2 #evBox .center:hover a { width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.8); margin-top: 48px; }
+  #container_2 #evBox .center:hover a > span { width: 100%; height: 100%; font-size: 1.2em; text-align: center; padding-top: 10%; font-weight: bold; }
+  #container_2 #evBox .story { width: 100%; height: 250px; float: left; }
+  #container_2 #evBox .story > .storyimg { width: 100%; height: 70%; background-image: url("../img/banner/story_1.png"); background-size: 100%; background-repeat: no-repeat; float: left; }
+  #container_2 #evBox .story > .storytext { float: left; width: 100%; height: calc(30% - 20px); padding: 20px 0 0 5px; }
+  #container_2 #evBox .story > .storytext > dt { font-size: 1.1em; font-weight: 600; margin-left: 30px; color: #1b932a; }
+  #container_2 #evBox .story > .storytext > dd { display: none; }
+  #container_2 #evBox .story > .storytext dd > button { float: right; margin: 20px 5px 0 0; background-color: #333; color: #fff; cursor: pointer; }
+  #container_2 #evBox .story > .storytext > p > a { margin-top: 35%; margin-right: 20px; width: 55px; height: 18px; float: right; background-image: url("../img/banner/story_butt.png"); } }
 
 /*# sourceMappingURL=seven_main.css.map */
