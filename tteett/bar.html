@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/bar.css">
+    <script src="../eunsun/js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="../eunsun/js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../eunsun/js/jquery/jquery-ui.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(function(){
+        $(".nav").on("click", function(){
+  $(this).toggleClass("open");
+$("#menu").toggleClass("active");
+})
+    });
+    </script>
+</head>
+<body>
+ <div id="wrap">
+ <div id="face"></div>
+ <div id="footer">CONTACT@kaneunsun.dothome.co.kr</div>
+  <div class="nav"><div class="icon"></div></div>
+  <div id="menu">
+   <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Portfolio</li>
+    <li>Contact</li>
+    </ul>
+</div>
+
+</div>
+</body>
+</html>

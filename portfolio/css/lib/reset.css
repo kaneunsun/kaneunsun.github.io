@@ -18,7 +18,7 @@
 
 a { text-decoration: none;}
 
-a:hover {  text-decoration: none;}
+a:hover {  text-decoration: underline;}
 
 ul, ol, li {  list-style: none;}
 
@@ -67,7 +67,7 @@ header, article, aside, footer,.footer_top, section, figure, nav, main { margin:
 }
 ul,ol,li{list-style:none;}
 a{text-decoration:none; color:#666;}
-/*a:hover{text-decoration:underline; color:#77a;}*/
+a:hover{text-decoration:underline; color:#77a;}
 table,tr,td,th,thead,tbody,tfoot{
     border:1px solid #88d; border-spacing: 0; border-collapse:collapse;}
 address{font-style:normal;}

@@ -7,15 +7,9 @@ $sub-gr:#eee;
 $black:#333;
 $white:#ffffff;
 $line :1px solid $sub01;
-$font: 1.2rem;
-$fontm:1em;
-$fonts: 0.85em;
-$fontss:0.75em;
+$font : 1.2rem;
 $fontbd : bold;
 $img:"../img/all";
-@mixin fl($lf:left){
-    float:$lf;}
-$bdr:1px solid #777;
 
 
 

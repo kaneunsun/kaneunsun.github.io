@@ -1,52 +1,39 @@
 //seven_login.scss 로그인
-$main:#1b932a;
-$white:#ffffff;
-$font:#666;
-$sub01:#ccc;
-$line :1px solid $sub01;
-$font_l:1.5em;
-$font_mm:1.3em;
-$font_m:1em;
-$font_s:0.812em;
 
-#wrap{
-    width:100%; 
-    height:auto; }//#wrap
+
+#wrap{width:100%; height:900px; 
+h3{font-size:11pt; font-weight: bold; color:#444;text-align: center; margin-top:10px;}
+    
+}//#wrap
 
 
 //---------#top_banner
 #top_banner{
-    width: 100%;
-    height: 160px;
-    background-color:$main;
+    width: 100%; height: 160px; 
+    background:#1b932a url("../img/bannerpt.png") no-repeat 100%; 
     margin-top: 15px;
-    position:relative;
-    z-index: -100;
+    margin: 0 auto;
 .banner{
-    width:100%; 
-    height: 100%;
-    background-image: url("../img/bannerpt.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    position: absolute;
-    text-align: center;
-    >h2{   
-        width: 100%; 
-       height: auto;
-       display:block;
-       font-size:$font_l; 
-       color:$white;
-       margin-top: 50px;
-     }
-    >p{ 
-    width: 100%;
-    height: auto;
-    display:inline-block;
-    font-size:$font_m;
-    color:$white;
-    margin-top:20px;}
-    }//.banner
+      width:100%; 
+      height: 155px;
+      padding-top:5px;
+    >h2{    
+        width: 100px; height: 35px;
+        letter-spacing: 3px;
+       font-size:1.875rem; font-size:22pt;
+       color:#fff;
+       display: block;
+       margin:0 auto;
+       margin-top:45px;
+    }
+    >p{width: 280px; 
+        color:#fff;
+        display: block;
+        margin:0 auto;
+        margin-top:20px;}
+    }
 }//#top_banner
+
 //---------------container---------
 #container{
        width: 600px; height: 530px;
@@ -57,7 +44,7 @@ $font_s:0.812em;
             margin-bottom: 20px;
           
     >h2{width: 100%; height:30px; 
-            font-size:$font_l;
+            font-size:1.5rem;
             font-weight: bold;
             color:#006634;
             text-align: center;
@@ -92,7 +79,7 @@ $font_s:0.812em;
                 box-sizing:border-box;
                 border-radius:2px; 
                 line-height: 30px;
-                border:$line;
+                border:1px solid #ccc;
                 float:left;
             }
         
@@ -104,7 +91,7 @@ $font_s:0.812em;
                 margin:0 5px;
                 border-radius:2px; 
                 line-height: 30px;
-                border:$line;
+                border:1px solid #ccc;
                 float:left;}
             
         }
@@ -113,7 +100,7 @@ $font_s:0.812em;
                       box-sizing:border-box;
                       border-radius:2px; 
                       line-height: 30px;
-                      border:$line;
+                      border:1px solid #ccc;
                       float:left;}
         }
             }//>ul>li>dl>dd
@@ -125,7 +112,7 @@ $font_s:0.812em;
               >dl>dd>input{
                   width: 280px; height: 30px;
                   box-sizing:border-box;
-                  border:$line;
+                  border:1px solid #ccc;
                   border-radius:2px; 
                   line-height: 30px;
                 }
@@ -142,14 +129,14 @@ $font_s:0.812em;
                 }
             >button>p{
                     text-align: center;
-                     color:$white;
+                     color:#fff;
                 }
             }//.login_button
             >ul>.textsm{
                 >p{margin-top:30px;
-                   color:red;
-                   font-size:$font_s;
-                   float: left;}
+                        color:red;
+                        font-size:0.8rem;
+                float: left;}
             }
         }//fieldset
     }//.loginBox
@@ -159,17 +146,17 @@ $font_s:0.812em;
             margin: 20px 0 50px 0;
             float:right;
         >.textbold{
-            font-size:$font_s; 
+            font-size:0.9rem; 
             font-weight:bold;}
         >p{
             width: 600px;
-            font-size:$font_s; 
+            font-size:0.8rem; 
             display:block;}
         >button{
             margin-top:-25px;
             float: right;
-            background-color:$white;
-            border:$line;
+            background-color:#fff;
+            border: 1px solid #ccc;
             cursor: pointer;
         }
         }//#button02

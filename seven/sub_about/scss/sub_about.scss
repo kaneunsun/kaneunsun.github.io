@@ -1,52 +1,38 @@
 //sub_2.scss 회사소개
-$main:#1b932a;
-$white:#ffffff;
-$font:#666;
-$sub01:#ccc;
-$line :1px solid $sub01;
-$font_l:1.5em;
-$font_mm:1.3em;
-$font_m:1em;
-$font_s:0.812em;
+
 
 
 #wrap{width:100%;height:auto ;}
 
+/*h3{font-size:11pt; 
+    font-weight: bold; 
+    color:#444;
+    text-align: center; 
+    margin-top:10px;}*/
 
 
 /*--------##top_banner----------*/
 #top_banner{
-    width: 100%; 
-    height:175px;
-    margin-top: 15px;
-    position: relative;
-    z-index: -100; 
-    
+    width: 100%; height:175px;
 .banner{    
-    width: 100%; 
-    height: 160px; 
-    background:$main url("../img/top_bann.png") 100% no-repeat;
+    width: 100%; height: 160px; 
+    background:#1b932a url("../img/top_bann.png") 100% no-repeat;
+    margin-top: 15px;
     float:left;
-    position: absolute;
-    margin:0 auto;
-    text-align: center;
-    z-index: -100; 
 >h2{
-    width: 100%; 
-    height: auto;
-    display:block;
-    font-size:$font_l;
+    width: 126px; height: 32px;
+    font-size:1.875rem; 
+    font-size:22pt;
     color:#fff;
-    margin-top: 50px;
-}
+    display: block;
+    margin:0 auto;
+    margin-top: 45px;}
 >p{
-    width: 100%;
-    height: auto;
-    display:inline-block;
-    font-size: $font_m;
+    width: 530px;
     color:#fff;
-    margin-top:20px;
-} 
+    display: block;
+    margin:0 auto;
+    margin-top:20px;}
 }//.banner
 }//top_banner
 
@@ -54,26 +40,25 @@ $font_s:0.812em;
 /*-----content----------*/
 #content{
     width: 960px;
-    height: 100%;
-    margin:0 auto;
+    height: 500px;
     margin-top:20px;
-    margin-bottom: 20px;
+
 .mini_nav{
   width: 600px;
   height: 30px;
-  border: $line;
+  border: 1px solid #bbb;
   border-width: 1px 0 ;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
   text-align: center; 
     li{
-        font-size: $font_s;
-        color:$font;
+        font-size: 0.9em;
+        color:#666;
         display: inline-block;
         margin-top: 8px;
         >a{
-          color:$font;  
+          color:#666;  
         }
     }
     .home{
@@ -87,94 +72,60 @@ $font_s:0.812em;
         display:inline-block;
         }
     }//.mini_nav
-.yearBox{
-        width: 100%;
-        height: auto; 
-        float:left;
+
+
 .navi_banner{
     width: 100%; 
-    height:100%;
-    margin-top:50px;
-    >#tabs{ 
-        width:100%; 
-        height:31px;
-        >ul{
-            width: 70%; 
-            height: 100%;
-            margin:0 auto;
-            >li{
-                width: calc(100% / 6); 
-                height: 100%; 
-                float:left;
-                >a{
-                    width: 100%; 
-                    height: 100%; 
-                    text-align: center;
-                    line-height:150%;
-                    font-size:$font_l;
-                    font-weight: bold;
-                    color:#999;
-                    border-bottom:2px dashed #999;
-                    &:hover{
-                        color:#333;
-                        font-weight: bold;
-                        border-bottom:2px solid #333;
-                    }
-                    } 
-                }//li
-            }//ul
-        >div{
-            width:100%;
-            height:auto;
-            /*float:left;*/
-            margin-top:30px;
-        }
-        >#Box1{
-            width: 100%;
-            height: 662px;
-           background-image: url("../img/2016img.png");
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        >#Box2{
-            width: 100%;
-            height: 1500px;
-            background-image: url("../img/2015img.png");
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        >#Box3{
-             width: 100%;
-            height: 1530px;
-            background-image: url("../img/2014img.png");
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        >#Box4{
-             width: 100%;
-            height: 1530px;
-            background-image: url("../img/2013img.png");
-            background-position: center;
-            background-repeat: no-repeat;
-            
-        }
-        >#Box5{
-             width: 100%;
-            height: 1530px;
-            background-image: url("../img/2012img.png");
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        >#Box6{
-             width: 100%;
-            height: 1530px;
-            background-image: url("../img/2011img.png");
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        }//#tabs
-    }//.navi_banner
-    
+    height: 30px;
+    float:left;
+    padding-top:80px;
+>.navi_number{
+    width: 550px;
+    float:left;
+    margin-left: 140px;
+>li{width:70px;
+    float:left;
+>a{width:70px;
+    height: 30px;
+    float:left;
+    background-image: url("../img/206_2010.png");
+  &:hover{
+    width:70px;height: 30px;
+    float:left;
+    background-image: url("../img/206_2010_on.png");
+    }
+    }//a
+   
+&:nth-child(1)>a{background-position: 0;}
+&:nth-child(2)>a{background-position: -65px;}
+&:nth-child(3)>a{background-position: -135px;}
+&:nth-child(4)>a{background-position: -205px;;}
+&:nth-child(5)>a{background-position: -275px;}
+&:nth-child(6)>a{background-position: -345px;}
+&:nth-child(7)>a{background-position:-414px;}
+     }//li
+    }//.navi_number
+
+
+>.button{
+    float:left;
+>li{
+    width: 25px;height: 25px;
+    float:left;
+>a{
+    width: 24px;height: 25px;
+    background-image: url("../img/up_down.png");}
   
-    }//.yearBox
+&:nth-child(1)>a{background-position: -24px;}
+&:nth-child(2)>a{background-position: 0;}
+      }//li
+    }//.button
+    }//.navi_banner
+
+.center{
+    width: 100%; height: 300px; 
+    margin-top: 10px; 
+    background-image: url("../img/center.png"); float:left; 
+    background-position: center; 
+    background-repeat: no-repeat;}
 }//#content

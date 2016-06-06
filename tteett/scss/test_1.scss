@@ -1,0 +1,24 @@
+.nav{
+  border: 1px solid #333;
+  border-width: 1px 0 ;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav li{
+  display: inline;
+  //border: 1px solid #eee;
+}
+
+.nav a:hover{
+  background: #ddd;
+}
+
+.nav a{
+  display: inline-block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}

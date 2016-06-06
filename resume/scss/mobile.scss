@@ -1,13 +1,11 @@
-
-@media screen and (max-width:640px){
-$main:#f8b62c;
+@media screen and (max-width:767px){
 #wrap{
-    width: 100%;
-    height: 80px;
+    width: 90%;
+    height: 100%;
     
     >h1{
         width: 100%;
-        height: 50px;
+        height: 100%;
         padding-top:30px;
         font-size: 2rem;
         text-align: center;
@@ -54,18 +52,15 @@ $main:#f8b62c;
     
   .nav{
   z-index: 111;
-  width: 80px;
-  height: 50px;
+  width: 100px;
+  height: 80px;
   margin: 0 auto;
-  top:130px;
-  right:10%;
+  top:10%;
+  left:60%;
   cursor: pointer;
   position: absolute;
-  float:right;
-  
   
 >.icon{
-  
   -webkit-transition: all 0.4s ease-out;
   position: absolute;
   top: 0;
@@ -89,7 +84,6 @@ $main:#f8b62c;
     top: 10px;
     left: 0;}
   }//.icon
-
   &:hover{
     .icon{
       background-color:#fff;
@@ -137,120 +131,48 @@ $main:#f8b62c;
     padding:0;
     margin-top:100px;
     font-family: sans-serif;
-    font-size: 1.5em;
+    font-size: 20px;
     font-weight: 100;
     text-transform: uppercase;
       &>li{
           height:auto;
-         &>a:first-child{
+         &>a>span:first-child{
             margin-top: 0;}  
-  &>a{
+  &>a>span{
       width: 100%;
       height: 100%;
       color:#fff;
-      padding: 20px 0;
+      margin: 30px 0;
+      padding: 5px 0;
       letter-spacing: 0.5em;
       text-decoration: none;
       -webkit-transition: all 0.25s;}
-  &>a:hover{
+  &>a>span:hover{
       width: 100%;
       color:$main;
-      text-decoration: none;
        }
       }//li
     }//ul
   &.active{
-    height: auto;
+    height: 100%;
   }
 }//#menu
     
-#resume_line{
+#resume{
         margin: 0 auto;
-        width: 80%;
-        height: 58.79vw;
-        border-style: solid;
-        border-width: 5px;
-        border-color: #fff;
-        position: relative;
-        margin-top:60px;
-.resume{
-        margin:5px 0 0 5px;
-        width:calc(100% - 10px);
-        height:calc(100% - 10px);
+        margin-top: 5%;
+        width: 80%/*700px*/;
+        height: 60vw/*500px*/;
         background-image: url("../img/about_k.png");
         background-color:#fff;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100%;
-        background-size: 75%;
-        position:absolute;
+        background-size: 80%;
+        box-shadow: 5px 5px 8px #333;
     }//#resume
-    }
-    .button{
-        width: 50px;
-        height: 50px;
-        background-color:#fff;
-        border-radius: 50%;
-        margin:0 auto;
-        margin-top:20px;
-        margin-bottom: 50px;
-        box-shadow: 3px 3px 5px #333;
-        &:hover{
-           background-color:#333; 
-        }
-        >p{
-            font-size:25px;
-            line-height:52px;
-            color:#333;
-            cursor: pointer;
-            margin-left: 12px;
-            &:hover{
-                color:#f8b62c;
-            }
-            
-        }
-     
-         }//.button
-    .box_1{
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        position: fixed;
-         z-index: 600;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+    
+    .button,.imgBox,.img_button>a{
         display: none;
-   
-   .imgBox {
-    padding-top:300px;
-    background-image: url(../img/mob_1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #fff;
-    background-size:90%;
-    width: 100%;
-    height: 262.5vw;
-
-   >.img_button{
-       left: 46%;
-       top:5%;
-       width: 70px;
-       height:40px;
-       background-color: #f8b62c;
-       position: absolute;
-       font-size: 1em;
-       z-index: 1000;
-       border-radius: 10px;
-       text-align: center;
-       >a{
-        margin-top: 10px;
-        text-decoration: none;
-        color:#fff;
-        font-weight: bold;}
-      }//ul
-    }//.imgBox
     }
 }//#wrap
-}  
+}
