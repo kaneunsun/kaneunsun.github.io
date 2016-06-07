@@ -1,50 +1,136 @@
 //seven_login.scss 로그인
+$main:#1b932a;
+$white:#ffffff;
+$font:#666;
+$sub01:#ccc;
+$line :1px solid $sub01;
+$font_l:1.5em;
+$font_mm:1.3em;
+$font_m:1em;
+$font_s:0.812em;
 
-
-#wrap{width:100%; height:900px; 
-h3{font-size:11pt; font-weight: bold; color:#444;text-align: center; margin-top:10px;}
-    
-}//#wrap
+#wrap{
+    width:100%; 
+    height:auto; }//#wrap
 
 
 //---------#top_banner
 #top_banner{
-    width: 100%; height: 160px; 
-    background:#1b932a url("../img/bannerpt.png") no-repeat 100%; 
+    width: 100%;
+    height: 160px;
+    background-color:$main;
     margin-top: 15px;
-    margin: 0 auto;
+    position:relative;
+    z-index: -100;
 .banner{
-      width:100%; 
-      height: 155px;
-      padding-top:5px;
-    >h2{    
-        width: 100px; height: 35px;
-        letter-spacing: 3px;
-       font-size:1.875rem; font-size:22pt;
-       color:#fff;
-       display: block;
-       margin:0 auto;
-       margin-top:45px;
-    }
-    >p{width: 280px; 
-        color:#fff;
-        display: block;
-        margin:0 auto;
-        margin-top:20px;}
-    }
+    width:100%; 
+    height: 100%;
+    background-image: url("../img/bannerpt.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    text-align: center;
+    >h2{   
+        width: 100%; 
+       height: auto;
+       display:block;
+       font-size:$font_l; 
+       color:$white;
+       margin-top: 50px;
+     }
+    >p{ 
+    width: 100%;
+    height: auto;
+    display:inline-block;
+    font-size:$font_m;
+    color:$white;
+    margin-top:20px;}
+    }//.banner
 }//#top_banner
+
+
+//---------------------table
+  #tableBox{
+      width:800px;
+      height:200px;
+      margin:0 auto;
+      margin-top:50px;
+      border:0;
+      table{
+            width: 100%;
+            border-top:1px solid #333;
+            text-align:center;
+            border-collapse: collapse;
+          >caption{
+              width: 100%;
+              font-size:1.5rem;
+              border-bottom:20px solid #fff;
+              >span{
+                  width: 150px;
+                  height: 100%;
+                  font-size:1.5rem;
+                  color:#e42121;
+              }
+          }
+      }
+        }//#tableBox
+        th{
+            width:200px;
+            padding:13px 5px;
+            font-size:1rem;
+            color:#333;
+            line-height: 1.5;
+            letter-spacing:-1px;
+            background-color:#ddd;
+            border-bottom:1px solid #aaa;
+            border-left: 1px solid #aaa;
+        &:nth-child(1){
+            border-left:0;
+        }
+}
+        td{
+            width:200px;
+            height: 50px;
+            text-align:center;
+            line-height: 50px;
+             border-bottom:1px solid #aaa;
+            border-left: 1px solid #aaa;
+        &:nth-child(1){
+            border-left:0;
+        }
+}
+.yes_noBox{
+    width: 800px;
+    height: 80px;
+    margin:0 auto;
+    margin-top:50px;
+    p{
+        font-size: 0.9rem;
+        >span{
+            width: 100%;
+            height: 100%;
+            font-weight:bold;
+        }
+        
+    }
+    >.rigth_radio{
+        float:right;
+    }
+}
+
 
 //---------------container---------
 #container{
        width: 600px; height: 530px;
-        margin-top: 60px;
+        margin-top: 50px;
       
   >.textBox{
            width: 100%; height: 80px;
             margin-bottom: 20px;
+      /*border-top:1px solid #333; */   
           
     >h2{width: 100%; height:30px; 
-            font-size:1.5rem;
+            font-size:$font_l;
             font-weight: bold;
             color:#006634;
             text-align: center;
@@ -79,7 +165,7 @@ h3{font-size:11pt; font-weight: bold; color:#444;text-align: center; margin-top:
                 box-sizing:border-box;
                 border-radius:2px; 
                 line-height: 30px;
-                border:1px solid #ccc;
+                border:$line;
                 float:left;
             }
         
@@ -91,7 +177,7 @@ h3{font-size:11pt; font-weight: bold; color:#444;text-align: center; margin-top:
                 margin:0 5px;
                 border-radius:2px; 
                 line-height: 30px;
-                border:1px solid #ccc;
+                border:$line;
                 float:left;}
             
         }
@@ -100,7 +186,7 @@ h3{font-size:11pt; font-weight: bold; color:#444;text-align: center; margin-top:
                       box-sizing:border-box;
                       border-radius:2px; 
                       line-height: 30px;
-                      border:1px solid #ccc;
+                      border:$line;
                       float:left;}
         }
             }//>ul>li>dl>dd
@@ -112,7 +198,7 @@ h3{font-size:11pt; font-weight: bold; color:#444;text-align: center; margin-top:
               >dl>dd>input{
                   width: 280px; height: 30px;
                   box-sizing:border-box;
-                  border:1px solid #ccc;
+                  border:$line;
                   border-radius:2px; 
                   line-height: 30px;
                 }
@@ -129,14 +215,14 @@ h3{font-size:11pt; font-weight: bold; color:#444;text-align: center; margin-top:
                 }
             >button>p{
                     text-align: center;
-                     color:#fff;
+                     color:$white;
                 }
             }//.login_button
             >ul>.textsm{
                 >p{margin-top:30px;
-                        color:red;
-                        font-size:0.8rem;
-                float: left;}
+                   color:red;
+                   font-size:$font_s;
+                   float: left;}
             }
         }//fieldset
     }//.loginBox
@@ -146,17 +232,17 @@ h3{font-size:11pt; font-weight: bold; color:#444;text-align: center; margin-top:
             margin: 20px 0 50px 0;
             float:right;
         >.textbold{
-            font-size:0.9rem; 
+            font-size:$font_s; 
             font-weight:bold;}
         >p{
             width: 600px;
-            font-size:0.8rem; 
+            font-size:$font_s; 
             display:block;}
         >button{
             margin-top:-25px;
             float: right;
-            background-color:#fff;
-            border: 1px solid #ccc;
+            background-color:$white;
+            border:$line;
             cursor: pointer;
         }
         }//#button02

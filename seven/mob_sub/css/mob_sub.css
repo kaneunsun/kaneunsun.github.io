@@ -1,0 +1,12 @@
+#wrap { width: 100%; height: 100%; }
+#wrap #top_banner { width: 100%; height: 175px; margin-top: 15px; position: relative; z-index: -100; }
+#wrap #top_banner .banner { width: 100%; height: 160px; background: #1b932a url("../img/top_bann.png") 100% no-repeat; float: left; position: absolute; margin: 0 auto; text-align: center; z-index: -100; }
+#wrap #top_banner .banner > h2 { width: 100%; height: auto; display: block; font-size: 1.5em; color: #fff; margin-top: 50px; }
+#wrap #top_banner .banner > p { width: 100%; height: auto; display: inline-block; font-size: 1em; color: #fff; margin-top: 20px; }
+#wrap .mini_nav { width: 600px; height: 30px; border: 1px solid #ccc; border-width: 1px 0; list-style-type: none; margin: 0 auto; padding: 0; text-align: center; margin-top: 20px; }
+#wrap .mini_nav li { font-size: 0.812em; color: #666; display: inline-block; margin-top: 8px; }
+#wrap .mini_nav li > a { color: #666; }
+#wrap .mini_nav .home { width: 30px; height: 30px; margin: 0; padding-left: 5px; background-image: url("../img/home.png"); background-repeat: no-repeat; background-position: center; display: inline-block; }
+#wrap #mobimg { width: 800px; height: 1800px; background-image: url("../img/mob_sub.png"); margin: 0 auto; margin-top: 30px; }
+
+/*# sourceMappingURL=mob_sub.css.map */

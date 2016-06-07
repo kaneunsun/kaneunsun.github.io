@@ -1,61 +1,78 @@
 //sub_1.scss 상품소개
 
-#wrap{width:100%;height:auto ;}
-#top_banner{
-    width: 100%; height: 160px; 
-    background:#1b932a url(../img/top_bann.png) 100% no-repeat;
-    margin-top: 15px;
-    >.banner{
-        width:100%; 
-        height: 80px;
-        padding-top:5px;
-       
-    >h2{
-         width: 120px; 
-         height: 35px;
-         font-size:1.875rem; 
-         font-size:22pt;
-         color:#fff;
-         display: block;
-         margin:0 auto;
-         margin-top:45px;
-        
-      }
-    >p{
-    width: 350px;
-    color:#fff;
-    display: block;
-    margin:0 auto;
-    margin-top:20px;
-     }
-    }
-}//#top_banner
+$main:#1b932a;
+$white:#ffffff;
+$font:#666;
+$sub01:#ccc;
+$line :1px solid $sub01;
+$font_l:1.5em;
+$font_mm:1.3em;
+$font_m:1em;
+$font_s:0.812em;
 
+#wrap{width:100%;height:auto ;}
+
+/*--------##top_banner----------*/
+
+#top_banner{
+    width: 100%; 
+    height:175px;
+    margin-top: 15px;
+    position: relative;
+    z-index: -100; 
+    
+.banner{    
+    width: 100%; 
+    height: 160px; 
+    background:$main url("../img/top_bann.png") 100% no-repeat;
+    float:left;
+    position: absolute;
+    margin:0 auto;
+    text-align: center;
+    z-index: -100; 
+>h2{
+    width: 100%; 
+    height: auto;
+    display:block;
+    font-size:$font_l; 
+    color:$white;
+    margin-top: 50px;
+}
+>p{
+    width: 100%;
+    height: auto;
+    display:inline-block;
+    font-size: $font_m;
+    color:$white;
+    margin-top:20px;
+} 
+}//.banner
+}//top_banner
 
 
 
 /*-----------#product_icon------------*/
 #product_icon{
     width: 960px; 
-    height: 250px;
+    height: auto;
     margin-top:20px;
 
 .mini_nav{
   width: 600px;
   height: 30px;
   margin: 0 auto;
-  border: 1px solid #bbb;
+  border: $line;
   border-width: 1px 0 ;
   list-style-type: none;
   padding: 0;
   text-align: center; 
     li{ 
-        font-size: 0.9em;
-        color:#666;
+        font-size: $font_s;
+        color:$font;
         display: inline-block;
         margin-top: 8px;
         >a{
-          color:#666;  
+          color:$font;  
         }
     }
     .home{
@@ -74,7 +91,7 @@
     width: 730px; 
     height: 110px; 
     margin:0 auto;
-    margin-top:50px;
+    margin-top:70px;
 >ul>li>a{
     background-image: url("../img/icon.png");
     &:hover{background-image: url("../img/iconOn.png");}
@@ -94,7 +111,7 @@
     }//.icon
 .search{ 
     width: 730px; height:70px; 
-    border: 1px solid #999;
+    border: $line;
     margin:0 auto;
     margin-top:30px;
     background-color:#eee;
@@ -109,12 +126,12 @@
 >fieldset>#saerchBox{
     width: 300px; 
     height: 40px;
-    border: 1px solid #999;}
+    border: $line;}
     
 >fieldset>button{
     width: 40px; 
     height: 40px;
-    border: 1px solid #999;
+    border:$line;
     background-image: url("../img/search_but.png");
     background-position: center;
     cursor: pointer;}
@@ -124,92 +141,111 @@
 
 /*--------/neww----------------------*/
 #product_n_b{
-    width: 730px; height: 800px;
-    margin-top: 70px;
->.neww{
-    width: 100%;height: 35px; 
+    width: 960px; 
+    height:1200px;
+    margin: 0 auto;
+>#newBox{
+    width:100%;
+    height: auto;
     float:left; 
-    padding-top:55px;
+    padding-top:70px;
+    >ul{
+        width: 100%;
+        height: 50px;
+         
+        >li:nth-child(1){
+            font-size:1.5em; 
+            font-weight: bold;
+            float:left;
+            margin-left: 12%; }
+        >li:nth-child(2){
+            width: 65px;
+            height: 23px;
+            float: right;
+            margin-right: 12%;
+            >a{background-image: url("../img/the_butt.png");}
+        }//li(2)
+    }//ul
 
->p{
-    font-size:1.5rem; 
-    font-weight: bold;
-    float:left;
-    padding-bottom: 5px;
-}
->ul>a{
-    width: 65px; height: 23px;
-    background-image: url("../img/the_butt.png");
-    float:right; 
-}//>ul>a
-    }//.neww
-
-.new_box{
-    width: 730px; height: 270px; 
-    background-color: #fff;
-    float:left;
-    margin-top:10px;
-    
->ul>li{
-    width: 235px; height: 270px;
-    float:left;
-    
->a{
-    width: 235px; height: 270px;
-    float:left; 
-    display: block;
-    background-repeat: no-repeat; 
-    background-position: center;
-    border: 1px solid #ccc;
-  }
-      }//>ul>li
-    
->ul>li:nth-child(1){background-image: url("../img/new_1.png");}
->ul>li:nth-child(2){background-image: url("../img/new_2.png");margin: 0 11px;}
->ul>li:nth-child(3){background-image: url("../img/new_3.png");}
-  
-    }//.new_box
-
-
-.best{
-    width: 100%;
-    height:35px; 
-    float:left; 
-    padding-top:55px;
->p{
-    font-size:1.5rem; 
-    font-weight: bold;
-    float:left;
-    padding-bottom: 5px;}
->ul>a{
-    width: 65px;
-    height: 23px;
-    background-image: url("../img/the_butt.png");
-    float:right;}
-    }
-
-.best_box{width: 730px; 
+.newBan{
+    width: 100%; 
     height: 270px; 
-    background-color: #fff;
-    float:left;
-    margin-top:10px;
-    
->ul>li{
-    width: 235px; 
-    height: 270px;
-    float:left;
->a{
-    width: 235px; 
-    height: 270px;
+    float: left;
+    margin: 0 auto;
+ >ul{
+     width: 100%;
+     height: 100%;
+     margin-left: 12%;
+     >li{
+        width: 235px;
+        height: 270px;
+        float:left;
+        border:$line;
+         &:nth-child(1)>a{background-image: url("../img/new_1.png");}
+         &:nth-child(2)>a{background-image: url("../img/new_2.png");}
+         &:nth-child(3)>a{background-image: url("../img/new_3.png");}
+         }
+     >li:nth-child(2){margin:0 10px;}
+     }//ul
+    }//.newBan
+    }//#newBox
+
+
+>#bestBox{
+    width:960px;
+    height: auto;
     float:left; 
-    display: block;
-    background-repeat: no-repeat; 
-    background-position: center;
-    border: 1px solid #ccc;}
-       }//>ul>li
->ul>li:nth-child(1){background-image: url("../img/best_1.png");}
->ul>li:nth-child(2){background-image: url("../img/best_2.png");margin: 0 11px;}
->ul>li:nth-child(3){background-image: url("../img/best_3.png");}
-   
-    }//.best_box
-}//#product_n_b
+    padding-top:55px;
+    >ul{
+        width: 100%;
+        height: 50px;
+         
+        >li:nth-child(1){
+            font-size:1.5em; 
+            font-weight: bold;
+            float:left;
+            margin-left: 12%; }
+        >li:nth-child(2){
+            width: 65px;
+            height: 23px;
+            float: right;
+            margin-right: 12%;
+            >a{background-image: url("../img/the_butt.png");}
+        }
+    }//ul
+
+.bestBan{
+    width: 100%; 
+    height: 270px; 
+    float: left;
+    margin: 0 auto;
+ >ul{
+     width: 100%;
+     height: 100%;
+     margin-left: 12%;
+     >li{
+    width: 235px;
+    height: 270px;
+    float:left;
+    border: $line;
+         &:nth-child(1)>a{background-image: url("../img/best_1.png");}
+         &:nth-child(2)>a{background-image: url("../img/best_2.png");}
+         &:nth-child(3)>a{background-image: url("../img/best_3.png");}
+         }
+     >li:nth-child(2){margin:0 10px;}
+     }//ul
+    }//.newBan
+    }//#newBox
+    #mob_sub{
+        width: 100%;
+        height: 300px;
+        margin-top:80px; 
+        background-image: url("../img/bottBan.png");
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        float:left;
+    }
+}
+
+

@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="viewport" conter="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="apple-touch-icon" href="#" />
     <link rel="shortcut icon" type="image/x-icon" href="#" />
     <link rel="stylesheet" href="./css/lib/reset.css" />
     <link rel="stylesheet" href="./css/seven_main.css" />
     <link rel="stylesheet" href="../all/css/seven_hf.css" />
-   <script src="./js/jquery/jquery-1.12.2.min.js"></script>
-   <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
-   <script src="./js/jquery/jquery-ui.min.js"></script>
-   <script src="./js/banner.js"></script>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
+    <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    <script src="./js/banner.js"></script>
+    <script src="./js/menuBar.js"></script>
+    <script src="./js/hide.js"></script>
+    <!--<script src="./js/mainBanner.js"></script>-->
     
     <!--[if lte IE 9>
     <script src="/js/dist/html5shiv.min.js"></script>
@@ -20,70 +24,140 @@
     <script src="/js/dist/PIE.js"></script>
     <script src="/js/dist/respond.min.js"></script>
      -->
-     <style>
-    </style>
-    <script>
-$(function(){
+<script>
+    $(function(){
+        /*mainBanner();*/
+        $(".close2").on("click",function(){
+           $(this).parent().slideUp();
+       });
+         $("#popupBox1").hide();
+        $(".sev_img").on("click",function(){
+           $("#popupBox1").show();
+       }); 
+        
+         $(".close").on("click",function(){
+           $("#popupBox1").hide();
+       }); 
+        menuBar();
         banner();
         $("#tabs").tabs();
-    });
-    </script>
+        hideaction();
+        familyhide();
+        headpopup();
+      });
+</script>
     <title>세븐일레븐</title>
 </head>
 <body>
-    <div id="wrap">
-        <header id="seven_Header">
-            <h1><a href="./seven_main.html"><span>로고</span></a></h1>
-        <nav class="nav">
-          <ul>
-            <li class="top_navi_1" title="세븐일레븐 회사소개서브"><a href="../sub_about/about_sub.html">소개</a>
-            <ul class="hidden">
-                <li><a href="#"></a>회사 소개</li>
-                <li><a href="#"></a>사회 공헌</li>
-                <li><a href="#"></a>환경 경영</li>
-                <li><a href="#"></a>고객의 소리</li>
-                <li><a href="#"></a>고객 만족도 조사</li>
-            </ul>
-            </li>
-            <li class="top_navi_2" title="세븐일레븐 진행중인 이벤트"><a href="../sub_event/event_sub.html">이벤트</a></li>
-            <li class="top_navi_3" title="세븐일레븐 판매중인 상품"><a href="../sub_pd/pd_sub.html">상품소개</a></li>
-            <li class="top_navi_4" title="세븐일레븐 창업안내"><a href="#">창업안내</a></li>
-            <li class="login" title="로그인"><a href="../login/seven_login.html">로그인</a></li>
+   <div id="popupBox2">
+     <button class="close2"><i class="fa fa-times"></i><span>닫기</span></button>
+     <div class="contentPopup">
+     <a href="../mob_sub/mob_sub.html"><span>앱설치방법</span></a>
+     </div>
+   </div>
+   
+ <div id="wrap">
+     <div id="popupBox1">
+       <div class="popup">
+           <button class="close"><i class="fa fa-times"></i><span>닫기</span></button>
+           <div class="contentPopup2">
+               <p>image infomation(이미지출처 보기)</p>
+               <p>본 사이트는 상업목적이 아닌 <br />포트폴리오 용으로 제작하였음을 알립니다!</p>
+               <p>메인 &#45; https://www.7-eleven.co.kr</p>
+               <p>서브이미지 &#45; https://www.facebook.com/7elevenkorea/?fref=nf</p>
+           </div>
+       </div>
+   </div>
+   
+      <header id="seven_Header">
+       <h1><a href="./seven_main.html"><span>로고</span></a></h1>
+       
+      <div class="navBar"><div class="icon"></div></div>
+         <nav class="nav mobnav">
+         <dl class="mainMenu mobMenu">
+             <dt class="link moblink">소개</dt>
+             <dd class="menuDd mobDd">
+                 <ul>
+                     <li><a href="../sub_about/about_sub.html" title="회사소개">회사소개</a></li>
+                     <li><a href="#" title="사회공헌">사회공헌</a></li>
+                     <li><a href="#" title="환경경영">환경경영</a></li>
+                     <li><a href="#" title="고객의 소리">고객의 소리</a></li>
+                     <li><a href="#" title="고객만족도조사">고객만족도조사</a></li>
+                 </ul>
+             </dd>
+         </dl>
+          <dl class="mainMenu mobMenu">
+             <dt class="link moblink">이벤트</dt>
+             <dd class="menuDd mobDd">
+                 <ul>
+                     <li><a href="../sub_event/event_sub.html" title="진행중인 이벤트">진행중인 이벤트</a></li>
+                     <li><a href="#" title="성공 스토리">성공 스토리</a></li>
+                 </ul>
+             </dd>
+         </dl>
+         <dl class="mainMenu mobMenu">
+             <dt class="link moblink">상품소개</dt>
+             <dd class="menuDd mobDd">
+                 <ul>
+                     <li><a href="../sub_pd/pd_sub.html" title="NewBast">New&amp;Best</a></li>
+                     <li><a href="#" title="PB상품">PB상품</a></li>
+                     <li><a href="#" title="예약도시락">예약도시락</a></li>
+                 </ul>
+             </dd>
+         </dl>
+         <dl class="mainMenu mobMenu">
+             <dt class="link moblink">창업안내</dt>
+             <dd class="menuDd mobDd">
+                 <ul>
+                     <li><a href="../sub_4/seven_sub_4.html" title="창업가이드">창업가이드</a></li>
+                     <li><a href="#" title="가맹 FAQ">가맹 FAQ</a></li>
+                     <li><a href="#" title="가맹상담">가맹상담</a></li>
+                     <li><a href="#" title="가맹점포">가맹점포</a></li>
+                 </ul>
+             </dd>
+         </dl>
+         <ul class="sitemap">
+             <li class="login" title="로그인"><a href="../login/seven_login.html">로그인</a></li>
             <li class="customer" title="고객센터"><a href="#">고객센터</a></li>
-          </ul>
-        </nav>
+         </ul>
+       </nav>
           </header><!--//#seven_Header-->
-           
-        <article id="main">
+        
+       <div id="mainBanner">
+         <article id="main" class="banner_box">
             <h2>메인</h2>
             <ul class="main_ban">
                <li class="main_img"><a href="#"><span>메인</span></a></li>
                <li class="main_2_img"><a href="#"><span>메인2</span></a></li>
                <li class="main_3_img"><a href="#"><span>메인3</span></a></li>
             </ul>
-            <ul class="cen_butt">
+            <!--<ul class="cen_butt">
                 <li><a href="#"><span>가운데버튼</span></a></li>
                 <li><a href="#"><span>가운데버튼</span></a></li>
                 <li><a href="#"><span>가운데버튼</span></a></li>
-            </ul>
+            </ul>-->
             
              <ul class="main_but">
                 <li class="m_left_but"><a href="#" role="button"><span>메인왼쪽이동화살표</span></a></li>
                 <li class="m_re_but"><a href="#" role="button"><span>메인오른쪽이동화살표</span></a></li>
              </ul>
-            </article><!--//#main-->
-           
-           <article id="container_1">
+            </article>
+        </div><!--//#main-->
+    
+        <article id="container_1">
                <h2>메인아래배너</h2>
-               
+               <div id="bannerText">
+                   <p>세븐일레븐 행사</p>
+               </div>
+            <div class="topBox">
                <div id="top_1">
                <h3>상품소개</h3>
                 <ul class="topBox_1">
-                    <li><a href="#"><span>과자류</span></a></li>
-                    <li><a href="#"><span>간편식사</span></a></li>
-                    <li><a href="#"><span>즉석식사</span></a></li>
-                    <li><a href="#"><span>아이스크림</span></a></li>
-                     <li class="mo"><a href="#"><span>화살표</span></a></li>
+                    <li class="topicon1"><a href="../sub_pd/pd_sub.html"><span>과자류</span></a></li>
+                    <li class="topicon2"><a href="../sub_pd/pd_sub.html"><span>간편식사</span></a></li>
+                    <li class="topicon3"><a href="../sub_pd/pd_sub.html"><span>즉석식사</span></a></li>
+                    <li class="topicon4"><a href="../sub_pd/pd_sub.html"><span>아이스크림</span></a></li>
+                     <li class="topmo"><a href="../sub_pd/pd_sub.html"><span>화살표</span></a></li>
                 </ul>
                </div>
                <div id="top_2">
@@ -99,28 +173,37 @@ $(function(){
                    </ul>
                   <p><a href="#">세븐일레븐 APP 바로가기</a></p>
                </div>
+               </div>
             </article><!--//#container_1-->
+    
             
-            <article id="container_2">
-                <h2>이벤트배너</h2>
-             <div class="ev_new"><span>이벤트와소식</span></div>
-             <div class="youtube"><iframe width="215" height="180" src="https://www.youtube.com/embed/e_p1kY2SUFA" frameborder="0" allowfullscreen></iframe><span>유튜브</span></div>
-             <div class="dosirak"><a href="#"><span>도시락</span></a></div>
-             <div class="pbBanner"><a href="#"><span>PB상품</span></a>
-             <ul class="button">
-                 <li><span>버튼</span></li>
-             </ul>
+        <article id="container_2">
+             <div class="ev_newText">
+                <p>이벤트와 소식</p>
              </div>
-             <div class="story"><span>성공스토리</span>
-             <p><a href="#"><span>버튼</span></a></p>
+             <div id="evBox">
+             <div class="youtube"><iframe src="https://www.youtube.com/embed/e_p1kY2SUFA" frameborder="0" allowfullscreen></iframe><span>유튜브</span></div>
+             <div class="dosirak"><a href="#"><span><p>추천 도시락</p>깔끔한 한끼 식사<br>언제 어디서나 간편하게</span></a></div>
+             <div class="pbBanner"><a href="../sub_pd/pd_sub.html"><span><p>세븐일레븐 PB상품</p>전 세계 12개국<br>세븐일레븐만의 PB상품 브랜드</span></a>
              </div>
-             <div class="center"><a href="#"><span>창업안내센터</span></a></div>
+             <div class="center"><a href="#"><span>세븐일레븐 창업안내</span></a></div>
+             <div class="story">
+              <div class="storyimg"></div>
+              <dl class="storytext">
+                  <dt>강촌점<br>김선준·박원근 경영주</dt>
+                  <dd>과감한 리뉴얼과<br>지역 특화 전략으로<br>매충 재도약을 이뤄내다.
+                  <button>자세히보기</button>
+                  </dd>
+              </dl>
+             </div>
+            </div>
             </article><!--//#container_2-->
+   
 
   <footer>
     <div id="footer_Box">
      <h2>7eleFooter</h2>
-    <div id="footer_top">
+        <div id="footer_top">
      <dl class="util">
         <dt>CUSTOMER</dt>
             <dd>
@@ -131,6 +214,8 @@ $(function(){
                     <li><a href="#">입점문의</a></li>
                   </ul>
             </dd>
+            </dl>
+     <dl class="util2">
         <dt>RECRUIT</dt>
             <dd>
                 <ul>
@@ -145,7 +230,7 @@ $(function(){
        <select name="familyOption" id="familyOption">
         <option value="롯데그룹">롯데그룹</option>
         <option value="LPOINT">LPOINT</option>
-        <option value="롯데제과">롯데제과</option>
+        <option valuze="롯데제과">롯데제과</option>
         <option value="롯데리아">롯데리아</option>
        </select>
       <button type="button"><p>GO</p></button>
@@ -154,9 +239,9 @@ $(function(){
 
     </dl>   
      </div><!--#footer_top-->
-  <div id="footer_body">
+    <div id="footer_body">
       <div class="qr">
-          <img src="../all/footer/bac.png" alt="세븐일레븐 QR코드">
+       <!--   <img src="../all/footer/bac.png" alt="세븐일레븐 QR코드">-->
       </div>
       <div class="cont_footer">
           <ul>
@@ -177,7 +262,11 @@ $(function(){
             <li><a href="#"><span>블로그</span></a></li>
         </ul>
         </div>
-    </div><!--// #footer_body-->
+    <div class="img_a">
+        <p>본 사이트는 상업목적이 아닌 포트폴리오용으로 제작되었음을 알립니다.</p>
+        <a class="sev_img" href="#">이미지 출저보기</a>
+       </div>
+        </div><!--// #footer_body-->
         </div>
         </footer>
  </div><!--//#wrap-->

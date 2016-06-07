@@ -1,11 +1,13 @@
-@media screen and (max-width:767px){
+
+@media screen and (max-width:640px){
+$main:#f8b62c;
 #wrap{
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    height: 80px;
     
     >h1{
         width: 100%;
-        height: 100%;
+        height: 50px;
         padding-top:30px;
         font-size: 2rem;
         text-align: center;
@@ -52,15 +54,18 @@
     
   .nav{
   z-index: 111;
-  width: 100px;
-  height: 80px;
+  width: 80px;
+  height: 50px;
   margin: 0 auto;
-  top:10%;
-  left:60%;
+  top:130px;
+  right:10%;
   cursor: pointer;
   position: absolute;
+  float:right;
+  
   
 >.icon{
+  
   -webkit-transition: all 0.4s ease-out;
   position: absolute;
   top: 0;
@@ -84,14 +89,15 @@
     top: 10px;
     left: 0;}
   }//.icon
+
   &:hover{
     .icon{
       background-color:#fff;
       &:before{
-        top: -15px;
+        top: -10px;
         background-color: #fff;}
       &:after{
-        top: 15px;
+        top: 10px;
         background-color:#fff;}
     }
   }
@@ -131,48 +137,124 @@
     padding:0;
     margin-top:100px;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: 100;
     text-transform: uppercase;
       &>li{
           height:auto;
-         &>a>span:first-child{
+         &>a:first-child{
             margin-top: 0;}  
-  &>a>span{
+  &>a{
       width: 100%;
       height: 100%;
       color:#fff;
-      margin: 30px 0;
-      padding: 5px 0;
+      padding: 20px 0;
       letter-spacing: 0.5em;
       text-decoration: none;
-      -webkit-transition: all 0.25s;}
-  &>a>span:hover{
+      -webkit-transition: all 0.25s;
+          font-weight: 500;}
+  &>a:hover{
       width: 100%;
       color:$main;
+      text-decoration: none;
        }
       }//li
     }//ul
   &.active{
-    height: 100%;
+    height: auto;
+      padding-bottom:150px; 
   }
 }//#menu
     
-#resume{
+#resume_line{
         margin: 0 auto;
-        margin-top: 5%;
-        width: 80%/*700px*/;
-        height: 60vw/*500px*/;
+        width: 80%;
+        height: 58.79vw;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #fff;
+        position: relative;
+        margin-top:60px;
+.resume{
+        margin:5px 0 0 5px;
+        width:calc(100% - 10px);
+        height:calc(100% - 10px);
         background-image: url("../img/about_k.png");
         background-color:#fff;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 80%;
-        box-shadow: 5px 5px 8px #333;
+        background-size: 100%;
+        background-size: 75%;
+        position:absolute;
     }//#resume
-    
-    .button,.imgBox,.img_button>a{
+    }
+    .button{
+        width: 40px;
+        height: 40px;
+        background-color:#fff;
+        border-radius: 50%;
+        margin:0 auto;
+        margin-top:20px;
+        margin-bottom: 100px;
+        box-shadow: 2px 2px 4px #333;
+        
+        &:hover{
+           background-color:#333; 
+        }
+        >p{
+            font-size:20px;
+            line-height:200%;
+            color:#333;
+            cursor: pointer;
+            margin-left: 10px;
+            &:hover{
+                color:#f8b62c;
+            }
+            
+        }
+     
+         }//.button
+    .box_1{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        position: fixed;
+         z-index: 600;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
         display: none;
+   
+   .imgBox {
+    padding-top:300px;
+    background-image: url(../img/mob_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    background-size:90%;
+    width: 100%;
+    height: 262.5vw;
+
+   >.img_button{
+       left: 46%;
+       top:5%;
+       width: 70px;
+       height:40px;
+       background-color: #f8b62c;
+       position: absolute;
+       font-size: 1em;
+       z-index: 1000;
+       border-radius: 10px;
+       text-align: center;
+       >a{
+        margin-top: 10px;
+        margin-bottom:100px;
+        text-decoration: none;
+        color:#fff;
+        font-weight: bold;}
+      }//ul
+    }//.imgBox
     }
 }//#wrap
-}
+}  

@@ -1,0 +1,66 @@
+<!DOCTYPE html><!--단축기!+tab--><!-- ctrl키 누르고 클릭하면 선택영역 복사가능-->
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+    <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    
+   <!-- [if lte IE 9]>
+       <script src="./js/dist/html5shiv.min.js"></script>
+       <script src="./js/dist/ie9.min.js"></script>
+       <script src="./js/dist/PIE.js"></script>
+       <script src="./js/dist/respond.min.js"></script>     
+    <![endif]-->
+    <style></style>
+    <script>
+   $(document).ready(function(){
+        $(".nav").on("click", function(){
+  $(this).toggleClass("open");
+  $("#menu").toggleClass("active");
+  });
+    });
+    </script>
+    <title>PORTFOLIO</title>
+    
+    
+</head>
+<body>
+<div id="wrap">
+   <h1>PORTFOLIO_2</h1>
+    <div id="white_top"></div>
+    <div id="whith_right"></div>
+    <div id="whith_bottom"></div>
+    <div id="whith_left"></div>
+    
+   <div class="nav"><div class="icon"></div></div>
+  <div id="menu">
+   <ul>
+    <li class="Home"><a href="../index.html">Home</a></li>
+    <li class="About"><a href="../resume/index.html">About</a></li>
+    <li class="Portfolio_1"><a href="../portfolio/index.html">Portfolio1</a></li>
+     <li class="Portfolio_2"><a href="../portfolio2/index.html">Portfolio2</a></li>
+    <li class="Contact"><a href="../contact/index.html" target="_blank">Contact</a></li>
+    </ul>
+   </div>
+
+<div id="portfolio">
+<ul>
+    <li><p class="pofo_1"></p></li>
+   <li><p class="pofo_2"></p></li>
+   <li><a href="../kera/home/kerasys.html" target="_blank"></a></li>
+   <li><a href="../kera/home/kerasys.html" target="_blank">◀ 케라시스 보러가기</a></li>
+   <li><a href="./contents.html" target="_blank">◀ 케라시스 작업과정</a></li>
+   
+</ul>
+
+</div>
+</div>
+
+    
+</body>
+</html>

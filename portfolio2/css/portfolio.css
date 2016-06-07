@@ -1,0 +1,106 @@
+/* portfolio.scss*/
+html, body { width: 100%; height: 100%; background: #febf01; background: -moz-linear-gradient(-45deg, #febf01 53%, #fed500 53%, #9fd1ca 53%, #44ceb9 53%); background: -webkit-linear-gradient(-45deg, #febf01 53%, #fed500 53%, #9fd1ca 53%, #44ceb9 53%); background: linear-gradient(135deg, #febf01 53%, #fed500 53%, #9fd1ca 53%, #44ceb9 53%); }
+
+@media screen and (min-width: 960px) { #wrap { width: 90%; height: 100%; }
+  #wrap > h1 { width: 100%; height: 80px; padding-top: 30px; font-size: 3rem; text-align: center; text-shadow: 1px 1px 3px #44ceb9; color: #ffffff; }
+  #wrap > #white_top { width: 100%; height: 28px; left: 0; top: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap > #whith_right { width: 28px; height: 100%; top: 0; right: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap > #whith_left { width: 28px; height: 100%; top: 0; left: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap > #whith_bottom { width: 100%; height: 28px; bottom: 0; left: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap #menu { position: fixed; right: 0; top: 20%; width: 10em; margin-top: -2.5em; z-index: 500; background-color: #fff; color: #fff; border-radius: 3em 0em 0em 3em; padding: .5em 2em .5em 0em; box-shadow: -10px 10px #febf01; /*  z-index: -10;*/ }
+  #wrap #menu > ul { height: 100%; width: 100%; text-align: left; font-family: "Josefin Sans" , sans-serif, bold; margin-left: -10px; }
+  #wrap #menu > ul > li > a { width: 100%; height: 100%; font-size: 1.5rem; line-height: 150%; letter-spacing: 2px; }
+  #wrap #menu > ul > li > a:hover { color: #febf01; text-decoration: none; }
+  #wrap #portfolio { width: 100%; height: 100%; }
+  #wrap #portfolio ul { margin: 0 auto; padding: 0; width: 900px; height: 100%; }
+  #wrap #portfolio ul > li { margin: 0 auto; width: 900px; height: 600px; float: left; margin-left: 10%; }
+  #wrap #portfolio ul > li:nth-of-type(1) { width: 710px; height: 477px; border-style: solid; border-width: 5px; border-color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(1) > .pofo_1 { margin: 5px 0 0 5px; width: 700px; height: 467px; background-image: url("../img/kera_one.png"); }
+  #wrap #portfolio ul > li:nth-of-type(2) { margin-top: 30px; width: 710px; height: 477px; border-style: solid; border-width: 5px; border-color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(2) > .pofo_2 { margin: 5px 0 0 5px; width: 700px; height: 467px; background-image: url("../img/kera_two.png"); }
+  #wrap #portfolio ul > li:nth-of-type(3) { margin-bottom: 150px; width: 40%; height: 319px; background-image: url("../img/pofo2.png"); background-repeat: no-repeat; background-position: left; }
+  #wrap #portfolio ul > li:nth-of-type(3):hover { transform: scale(1.2); transition: all 0.5s; }
+  #wrap #portfolio ul > li:nth-of-type(4) { width: 180px; height: 40px; margin-right: 15%; margin-top: 8%; float: right; border-style: solid; border-width: 5px; border-color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(4) > a { text-align: center; line-height: 250%; font-size: 1em; font-weight: bold; width: 100%; height: 100%; color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(4) > a:hover { background-color: #555; }
+  #wrap #portfolio ul > li:nth-of-type(5) { width: 180px; height: 40px; margin-right: 15%; margin-top: 20px; float: right; border-style: solid; border-width: 5px; border-color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(5) > a { text-align: center; line-height: 250%; font-size: 1em; font-weight: bold; width: 100%; height: 100%; color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(5) > a:hover { background-color: #555; } }
+@media screen and (min-width: 640px) and (max-width: 959px) { #wrap { width: 90%; height: 100%; }
+  #wrap > h1 { width: 100%; height: 80px; padding-top: 30px; font-size: 3rem; text-align: center; text-shadow: 1px 1px 3px #44ceb9; color: #ffffff; }
+  #wrap > #white_top { width: 100%; height: 28px; left: 0; top: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap > #whith_right { width: 28px; height: 100%; right: 0; top: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap > #whith_left { width: 28px; height: 100%; top: 0; left: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap > #whith_bottom { width: 100%; height: 28px; bottom: 0; left: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap .nav { z-index: 111; width: 50px; height: 50px; right: 10%; margin: 0 auto; cursor: pointer; position: absolute; }
+  #wrap .nav .icon { -webkit-transition: all 0.4s ease-out; position: absolute; margin: 0 auto; width: 40px; height: 5px; background-color: #fff; }
+  #wrap .nav .icon:before, #wrap .nav .icon:after { -webkit-transition: all 0.25s ease-out; position: absolute; width: 40px; height: 5px; background-color: #fff; content: ''; }
+  #wrap .nav .icon:before { top: -10px; left: 0; }
+  #wrap .nav .icon:after { top: 10px; left: 0; }
+  #wrap .nav:hover .icon { background-color: #fff; }
+  #wrap .nav:hover .icon:before { top: -10px; background-color: #fff; }
+  #wrap .nav:hover .icon:after { top: 10px; background-color: #fff; }
+  #wrap .nav.open .icon { -webkit-transition: all 0.4s ease-out; background-color: transparent; -webkit-transform: rotate(180deg); }
+  #wrap .nav.open .icon:before { top: 0; -webkit-transform: rotate(45deg); }
+  #wrap .nav.open .icon:after { top: 0; -webkit-transform: rotate(-45deg); }
+  #wrap #menu { width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 100; left: 0; right: 0; top: 0; position: absolute; height: 0px; overflow: hidden; text-align: center; -webkit-transition: all 0.5s; transition: all 0.5s; }
+  #wrap #menu > ul { width: 100%; height: 100%; list-style: none; padding: 0; margin-top: 200px; font-family: sans-serif; font-size: 1.5em; font-weight: 100; text-transform: uppercase; text-align: center; }
+  #wrap #menu > ul > li { height: auto; }
+  #wrap #menu > ul > li > a:first-child { margin-top: 0; }
+  #wrap #menu > ul > li > a { width: 100%; height: 100%; color: #fff; padding: 20px 0; letter-spacing: 0.5em; text-decoration: none; -webkit-transition: all 0.25s; font-weight: 500; }
+  #wrap #menu > ul > li > a:hover { width: 100%; color: #febf01; text-decoration: none; }
+  #wrap #menu.active { height: auto; padding-bottom: 150px; }
+  #wrap #portfolio { width: 100%; height: 100%; }
+  #wrap #portfolio ul { margin: 0 auto; padding: 0; width: 90%; height: auto; margin-top: 60px; }
+  #wrap #portfolio ul > li { width: 90%; height: 500px; float: left; /* margin-left:12%;*/ }
+  #wrap #portfolio ul > li:nth-of-type(1) { width: 100%; height: 49.6875vw; border-style: solid; border-width: 5px; border-color: #fff; }
+  #wrap #portfolio ul > li:nth-of-type(1) > .pofo_1 { margin: 5px; width: calc(100% - 10px); height: calc(100% - 10px); background-image: url("../img/kera_one.png"); background-repeat: no-repeat; background-position: center; background-size: 100%; }
+  #wrap #portfolio ul > li:nth-of-type(2) { margin-top: 30px; /*margin: 0 auto;*/ width: 100%; height: 49.6875vw; border-style: solid; border-width: 5px; border-color: #fff; }
+  #wrap #portfolio ul > li:nth-of-type(2) > .pofo_2 { margin: 5px; width: calc(100% - 10px); height: calc(100% - 10px); background-image: url("../img/kera_two.png"); background-repeat: no-repeat; background-position: center; background-size: 100%; }
+  #wrap #portfolio ul > li:nth-of-type(3) { margin-top: 30px; margin-left: 30%; width: 45%; height: 31.25vw; background-image: url("../img/pofo2.png"); background-repeat: no-repeat; background-position: center; background-size: 100%; }
+  #wrap #portfolio ul > li:nth-of-type(3):hover { transform: scale(1.2); transition: all 0.5s; }
+  #wrap #portfolio ul > li:nth-of-type(4) { width: 180px; height: 40px; margin-left: 35%; margin-top: 8%; /*  float:left;*/ border-style: solid; border-width: 5px; border-color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(4) > a { text-align: center; line-height: 250%; font-size: 1em; font-weight: bold; width: 100%; height: 100%; color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(4) > a:hover { background-color: #555; }
+  #wrap #portfolio ul > li:nth-of-type(5) { width: 180px; height: 40px; margin-left: 35%; margin-top: 20px; /* float:left;*/ border-style: solid; border-width: 5px; border-color: #ffffff; margin-bottom: 200px; }
+  #wrap #portfolio ul > li:nth-of-type(5) > a { text-align: center; line-height: 250%; font-size: 1em; font-weight: bold; width: 100%; height: 100%; color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(5) > a:hover { background-color: #555; } }
+@media screen and (max-width: 639px) { #wrap { width: 90%; height: 100%; /* position: relative;*/ }
+  #wrap > h1 { width: 100%; height: 50px; padding-top: 30px; font-size: 2rem; text-align: center; text-shadow: 1px 1px 3px #44ceb9; color: #ffffff; }
+  #wrap > #white_top { width: 100%; height: 10px; top: 0; left: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap > #whith_right { width: 10px; height: 100%; top: 0; right: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap > #whith_left { width: 10px; height: 100%; top: 0; left: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap > #whith_bottom { width: 100%; height: 10px; /**/ bottom: 0; left: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap .nav { z-index: 111; width: 80px; height: 50px; margin: 0 auto; top: 130px; right: 10%; cursor: pointer; position: absolute; float: right; }
+  #wrap .nav > .icon { -webkit-transition: all 0.4s ease-out; position: absolute; top: 0; right: 0; margin: 0 auto; width: 40px; height: 5px; background-color: #fff; }
+  #wrap .nav > .icon:before, #wrap .nav > .icon:after { -webkit-transition: all 0.25s ease-out; position: absolute; width: 40px; height: 5px; background-color: #fff; content: ''; }
+  #wrap .nav > .icon:before { top: -10px; left: 0; }
+  #wrap .nav > .icon:after { top: 10px; left: 0; }
+  #wrap .nav:hover .icon { background-color: #fff; }
+  #wrap .nav:hover .icon:before { top: -10px; background-color: #fff; }
+  #wrap .nav:hover .icon:after { top: 10px; background-color: #fff; }
+  #wrap .nav.open .icon { -webkit-transition: all 0.4s ease-out; background-color: transparent; -webkit-transform: rotate(180deg); }
+  #wrap .nav.open .icon:before { top: 0; -webkit-transform: rotate(45deg); }
+  #wrap .nav.open .icon:after { top: 0; -webkit-transform: rotate(-45deg); }
+  #wrap #menu { width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 100; left: 0; right: 0; top: 0; position: absolute; height: 0px; overflow: hidden; text-align: center; float: left; -webkit-transition: all 0.5s; transition: all 0.5s; }
+  #wrap #menu > ul { width: 100%; height: 100%; list-style: none; padding: 0; margin-top: 31.29vw; font-family: sans-serif; font-size: 1.5em; font-weight: 100; text-transform: uppercase; text-align: center; }
+  #wrap #menu > ul > li { height: auto; }
+  #wrap #menu > ul > li > a:first-child { margin-top: 0; }
+  #wrap #menu > ul > li > a { width: 100%; height: 100%; color: #fff; padding: 20px 0; letter-spacing: 0.5em; text-decoration: none; -webkit-transition: all 0.25s; font-weight: 500; }
+  #wrap #menu > ul > li > a:hover { width: 100%; color: #febf01; text-decoration: none; }
+  #wrap #menu.active { height: auto; padding-bottom: 150px; }
+  #wrap #portfolio { width: 100%; height: 100%; }
+  #wrap #portfolio ul { margin: 0 auto; padding: 0; width: 90%; height: auto; margin-top: 60px; }
+  #wrap #portfolio ul > li { width: 90%; height: 350px; float: left; }
+  #wrap #portfolio ul > li:nth-of-type(1) { margin: 0 auto; width: 100%; height: 55vw; /*350px*/ border-style: solid; border-width: 5px; border-color: #fff; }
+  #wrap #portfolio ul > li:nth-of-type(1) > .pofo_1 { margin: 5px; width: calc(100% - 10px); height: calc(100% - 10px); background-image: url("../img/kera_1.png"); background-repeat: no-repeat; background-position: center; background-size: 100%; }
+  #wrap #portfolio ul > li:nth-of-type(2) { margin: 0 auto; width: 100%; height: 109.546vw; /*700px*/ border-style: solid; border-width: 5px; border-color: #fff; margin-top: 20px; }
+  #wrap #portfolio ul > li:nth-of-type(2) > .pofo_2 { margin: 5px; width: calc(100% - 10px); height: calc(100% - 10px); background-image: url("../img/kera_2.png"); background-repeat: no-repeat; background-position: center; background-size: 100%; }
+  #wrap #portfolio ul > li:nth-of-type(3) { margin-left: 20%; width: 60%; height: 46.94vw; background-image: url("../img/pofo2.png"); background-repeat: no-repeat; background-position: center; background-size: 100%; }
+  #wrap #portfolio ul > li:nth-of-type(3):hover { transform: scale(1.2); transition: all 0.5s; }
+  #wrap #portfolio ul > li:nth-of-type(4) { margin-bottom: 20px; margin-left: 30%; width: 31.29vw; height: 6.259vw; border-style: solid; border-width: 0.782vw; border-color: #fff; }
+  #wrap #portfolio ul > li:nth-of-type(4) > a { text-align: center; line-height: 250%; font-size: 2.8vw; font-weight: bold; width: 100%; height: 100%; color: #fff; }
+  #wrap #portfolio ul > li:nth-of-type(5) { margin-bottom: 50px; margin-left: 30%; width: 31.29vw; height: 6.259vw; border-style: solid; border-width: 0.782vw; border-color: #fff; }
+  #wrap #portfolio ul > li:nth-of-type(5) > a { text-align: center; line-height: 250%; font-size: 2.8vw; font-weight: bold; width: 100%; height: 100%; color: #fff; } }
+
+/*# sourceMappingURL=portfolio.css.map */

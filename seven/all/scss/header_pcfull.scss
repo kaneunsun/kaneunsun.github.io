@@ -1,0 +1,141 @@
+@import "basic.scss";
+
+@media screen and (min-width:960px){
+ 
+ #popupBox2{
+     width: 900px; 
+     height: 150px;
+     margin: 0 auto;
+     .contentPopup{
+         width:100%;
+         height:100%;
+         >a{
+         width:calc(100% - 120px); 
+         height: 130px; 
+         float: left; 
+         margin-top: 10px; 
+         background-image:url("../header/mobtop.png");
+         background-position:center;
+        /* border: 1px solid #aaa; */
+         }
+     }//.contentPopup
+    .close2{
+        width: 40px; 
+        height: 40px; 
+        border: 2px solid #aaa; 
+        border-radius:50%;
+        float:right; 
+        margin:50px 0;
+        margin-right:50px;
+        background-color: #fff;
+        cursor: pointer;
+       i{
+           font-size:24px; 
+           padding:3px;
+          >span{
+              width: 0;
+              height: 0;
+              display: block; 
+              overflow: hidden;}
+        } 
+     } //.close2
+    }//#popupBox2
+header{
+    width: 960px;  
+    height:40px; 
+    padding-top:50px;
+    margin: 0 auto;
+>h1{
+    margin-left: 20px;
+    width: 140px;
+    height: 30px;
+    float:left;
+     >a{
+         width: 100%;
+         height: 100%;
+         background-image: url("../header/7_logo.png");
+      }//a
+    }//h1 
+
+    
+>nav{
+        width:calc(100% - 200px);
+        min-height: 40px;
+        height: auto;
+        background-color:#fff;/*rgba(255,255,255,0.8)*/;
+        float: right;
+        margin:5px 30px 0 0;
+        position:relative;
+        z-index:1;
+        >.mainMenu{
+            width:calc(100% / 6);
+            height:100%;
+            float:left;
+            text-align: center;
+            margin-right:20px;
+            >.link{
+                font-size:1.2em;
+                font-weight: bold;
+                color:#555;
+                cursor:pointer;
+            }//dt
+            >.menuDd{
+                width: 100%;
+                margin-top:10px;
+                >ul{ width: 100%;
+                    >li{
+                        >a{
+                        color:#555;
+                        line-height: 30px;  
+                        font-size: 1em;
+                        font-weight:500;
+                            &:hover{
+                                color:#e65c35;
+                            }}  
+                    }
+              /* display: none;*/
+                }//ul
+            }//dd
+    }
+    .sitemap{
+        width:170px;
+        height: 20px; 
+        float: left;
+        margin-left: 0;
+        .login,.customer{
+            width: 70px;
+            height: 100%;
+            float: left;
+        }
+        .login{
+            margin-right: 5px;
+        }
+    }
+    }//nav
+    
+
+.login>a,.customer>a{
+    margin-top: 2px;
+    font-size:0.95rem;
+    color:$white;
+    text-decoration: none;
+    font-weight:100;}
+
+.login{
+    width: 55px; 
+    height:20px;
+    text-align: center;
+    background-color: $main;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+.customer{
+    width: 70px; 
+    height: 20px;
+    text-align: center;
+    background-color:$sub02; 
+    margin-right: 0;
+    float: right;
+    }
+}//header
+}

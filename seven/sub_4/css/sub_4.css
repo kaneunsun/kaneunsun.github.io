@@ -1,3 +1,28 @@
-
+#wrap { width: 100%; height: auto; /*-----content----------*/ }
+#wrap #top_banner { width: 100%; height: 175px; margin-top: 15px; position: relative; z-index: -100; }
+#wrap #top_banner .banner1 { width: 100%; height: 160px; background-color: #1b932a; background-image: url("../img/top_bann.png"); background-position: right; background-repeat: no-repeat; float: left; position: absolute; margin: 0 auto; text-align: center; /*  z-index: -100; */ }
+#wrap #top_banner .banner1 > h2 { width: 100%; height: auto; display: block; font-size: 1.5em; color: #fff; margin-top: 50px; }
+#wrap #top_banner .banner1 > p { width: 100%; height: auto; display: inline-block; font-size: 1em; color: #fff; margin-top: 20px; }
+#wrap #content1 { width: 960px; height: 20px; margin: 0 auto; margin-top: 20px; margin-bottom: 20px; }
+#wrap #content1 .mini_nav { width: 600px; height: 30px; border: 1px solid #ccc; border-width: 1px 0; list-style-type: none; margin: 0 auto; padding: 0; text-align: center; }
+#wrap #content1 .mini_nav li { font-size: 0.812em; color: #666; display: inline-block; margin-top: 8px; }
+#wrap #content1 .mini_nav li > a { color: #666; }
+#wrap #content1 .mini_nav .home { width: 30px; height: 30px; margin: 0; padding-left: 5px; background-image: url("../img/home.png"); background-repeat: no-repeat; background-position: center; display: inline-block; }
+#wrap > #content { width: 900px; height: 500px; /*  border: 2px solid #999; border-left: 0; border-right:0;*/ position: relative; margin: 0 auto; top: 30px; overflow: hidden; }
+#wrap > #content > .btn { width: 100%; height: 0; position: relative; }
+#wrap > #content > .btn > button { width: 50px; height: 500px; background-color: rgba(255, 255, 255, 0.8); position: absolute; top: 0; }
+#wrap > #content > .btn .l_btn { background-image: url("../img/left_but.png"); background-position: center; background-repeat: no-repeat; background-size: 50%; left: 0; }
+#wrap > #content > .btn .r_btn { background-image: url("../img/ri_but.png"); background-position: center; background-repeat: no-repeat; background-size: 50%; right: 0; }
+#wrap > #content .ban { width: 400%; height: 100%; margin-left: -100%; }
+#wrap > #content .ban > li { width: calc(100% / 4); height: 100%; float: left; }
+#wrap > #content .ban > .box1 { background-image: url("../img/banner1.png"); }
+#wrap > #content .ban > .box2 { background-image: url("../img/banner2.png"); }
+#wrap > #content .ban > .box3 { background-image: url("../img/banner3.png"); }
+#wrap > #content .ind { width: 300px; height: 20px; position: absolute; bottom: 0; left: 50%; margin-left: -40px; }
+#wrap > #content .ind > li { width: 15px; height: 15px; background-color: #ccc; /*box-shadow:3px 1px #aaa;*/ float: left; border-radius: 10px; margin-left: 15px; transition: all 0.5s; cursor: pointer; }
+#wrap > #content .ind > li:hover { width: 30px; background-color: #444; }
+#wrap > #content .ind > li li > span { width: 0; height: 0; display: block; overflow: hidden; }
+#wrap > #content .ind > li .indWidth { width: 30px; }
+#wrap #boxa { width: 800px; height: 800px; background-image: url("../img/stepban.png"); background-position: center; background-repeat: no-repeat; margin: 0 auto; margin-top: 50px; }
 
 /*# sourceMappingURL=sub_4.css.map */

@@ -12,6 +12,8 @@
     <script src="./js/jquery/jquery-1.12.2.min.js"></script>
     <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
     <script src="./js/jquery/jquery-ui.min.js"></script>
+    <script src="../main/js/menuBar.js"></script>
+    
     
     <!--[if lte IE 9>
     <script src="./js/dist/html5shiv.min.js"></script>
@@ -22,24 +24,76 @@
      <style>
     </style>
     <script>
+   $(function(){
+        $("#tabs").tabs();
+       $(function(){
+        $("#tabs").find("li").on("click",function(e){
+            e.preventDefault();
+            var naviH = $(".navi_number").height(),
+                inD = $(this).index(),
+                boxH = $(".box_h").eq(inD).height(),
+                conH = naviH+boxH;
+            $("#content").css({height:conH + 100});})
+})
+         menuBar();
+       });
     </script>
     <title>세븐일레븐</title>
 </head>
 <body>
     <div id="wrap">
-        <header id="7Header">
+         <header id="seven_Header">
             <h1><a href="../main/seven_main.html"><span>로고</span></a></h1>
+        
         <nav class="nav">
-          <ul>
-            <li class="top_navi_1" title="세븐일레븐 회사소개서브"><a href="../sub_about/about_sub.html">소개</a></li>
-            <li class="top_navi_2" title="세븐일레븐 진행중인 이벤트"><a href="../sub_event/event_sub.html">이벤트</a></li>
-            <li class="top_navi_3" title="세븐일레븐 판매중인 상품"><a href="../sub_pd/pd_sub.html">상품소개</a></li>
-            <li class="top_navi_4" title="세븐일레븐 창업안내"><a href="#">창업안내</a></li>
-            <li class="login" title="로그인"><a href="../login/seven_login.html">로그인</a></li>
+         <dl class="mainMenu">
+             <dt class="top_navi_1 link">소개</dt>
+             <dd class="menuDd">
+                 <ul>
+                     <li><a href="../sub_about/about_sub.html" title="회사소개">회사소개</a></li>
+                     <li><a href="#" title="사회공헌">사회공헌</a></li>
+                     <li><a href="#" title="환경경영">환경경영</a></li>
+                     <li><a href="#" title="고객의 소리">고객의 소리</a></li>
+                     <li><a href="#" title="고객만족도조사">고객만족도조사</a></li>
+                 </ul>
+             </dd>
+         </dl>
+          <dl class="mainMenu">
+             <dt class="top_navi_2 link">이벤트</dt>
+             <dd class="menuDd">
+                 <ul>
+                     <li><a href="../sub_event/event_sub.html" title="진행중인 이벤트">진행중인 이벤트</a></li>
+                     <li><a href="#" title="성공 스토리">성공 스토리</a></li>
+                 </ul>
+             </dd>
+         </dl>
+         <dl class="mainMenu">
+             <dt class="top_navi_3 link">상품소개</dt>
+             <dd class="menuDd">
+                 <ul>
+                     <li><a href="../sub_pd/pd_sub.html" title="이달의 증정상품">New&amp;Best</a></li>
+                     <li><a href="#" title="PB상품">PB상품</a></li>
+                     <li><a href="#" title="예약도시락">예약도시락</a></li>
+                 </ul>
+             </dd>
+         </dl>
+         <dl class="mainMenu">
+             <dt class="top_navi_4 link">창업안내</dt>
+             <dd class="menuDd">
+                 <ul>
+                     <li><a href="../sub_4/seven_sub_4.html" title="창업가이드">창업가이드</a></li>
+                     <li><a href="#" title="가맹 FAQ">가맹 FAQ</a></li>
+                     <li><a href="#" title="가맹상담">가맹상담</a></li>
+                     <li><a href="#" title="가맹점포">가맹점포</a></li>
+                 </ul>
+             </dd>
+         </dl>
+         <ul class="sitemap">
+             <li class="login" title="로그인"><a href="../login/seven_login.html">로그인</a></li>
             <li class="customer" title="고객센터"><a href="#">고객센터</a></li>
-          </ul>
-        </nav>
-          </header><!--//#7_header-->
+         </ul>
+       </nav>
+          </header><!--//#seven_Header-->
            
         
            <article id="top_banner">
@@ -50,52 +104,56 @@
             
             </article>
             <article id="content">
-            
-                <ul class="mini_nav">
+            <ul class="mini_nav">
                     <li class="home"><a href="../main/seven_main.html"><span>home</span></a></li>
                     <li class="text_01"><a href="./about_sub.html">&#62; 회사 소개</a></li>
                     <li class="text_02">&#62; 회사 연혁</li>
                 </ul>
-        
-            <div class="navi_banner"><span>년도네비</span>
-            <ul class="navi_number">
-                <li><a href="#"><span>2016</span></a></li>
-                <li><a href="#"><span>2015</span></a></li>
-                <li><a href="#"><span>2014</span></a></li>
-                <li><a href="#"><span>2013</span></a></li>
-                <li><a href="#"><span>2012</span></a></li>
-                <li><a href="#"><span>2011</span></a></li>
-                <li><a href="#"><span>2010</span></a></li>
-            </ul>
-            <ul class="button">
+             <div class="yearBox">
+            <div class="navi_banner">
+            <div id="tabs">
+                <ul class="navi_number">
+                    <li><a href="#Box1">2016</a></li>
+                    <li><a href="#Box2">2015</a></li>
+                    <li><a href="#Box3">2014</a></li>
+                    <li><a href="#Box4">2013</a></li>
+                    <li><a href="#Box5">2012</a></li>
+                    <li><a href="#Box6">2011</a></li>
+                </ul>
+            
+            <!--<ul class="button">
                 <li><a href="#"><span>down_button</span></a></li>
                 <li><a href="#"><span>up_button</span></a></li>
-            </ul>
+            </ul>-->
+            <div id="Box1" class="box_h"></div>
+            <div id="Box2" class="box_h"></div>
+            <div id="Box3" class="box_h"></div>
+            <div id="Box4" class="box_h"></div>
+            <div id="Box5" class="box_h"></div>
+            <div id="Box6" class="box_h"></div>
+            </div><!--//#tabs-->
             </div>
-            <div class="center">
-              <ul>
-                  <li></li>
-                  <li></li>
-              </ul>  
             </div>
         </article>
         
           
-        <footer>
-         <div id="footer_Box">
-          <h2>sevenFooter</h2>
-             <div id="footer_top">
-              <dl class="util">
-               <dt>CUSTOMER</dt>
-                  <dd>
-                      <ul>
-                        <li><a href="#">고객의 소리</a></li>
-                        <li><a href="#">채용문의</a></li>
-                        <li><a href="#">가맹상담</a></li>
-                        <li><a href="#">입점문의</a></li>
-                      </ul>
-                  </dd>
-             <dt>RECRUIT</dt>
+   <footer>
+    <div id="footer_Box">
+     <h2>7eleFooter</h2>
+        <div id="footer_top">
+     <dl class="util">
+        <dt>CUSTOMER</dt>
+            <dd>
+                  <ul>
+                    <li><a href="#">고객의 소리</a></li>
+                    <li><a href="#">채용문의</a></li>
+                    <li><a href="#">가맹상담</a></li>
+                    <li><a href="#">입점문의</a></li>
+                  </ul>
+            </dd>
+            </dl>
+     <dl class="util2">
+        <dt>RECRUIT</dt>
             <dd>
                 <ul>
                     <li><a href="#">기업채용</a></li>
@@ -103,23 +161,24 @@
                     <li><a href="#">MATE</a></li>
                 </ul>
             </dd>
-            </dl>
+     </dl>
     <dl class="family">
       <form action="">
        <select name="familyOption" id="familyOption">
         <option value="롯데그룹">롯데그룹</option>
         <option value="LPOINT">LPOINT</option>
-        <option value="롯데제과">롯데제과</option>
+        <option valuze="롯데제과">롯데제과</option>
         <option value="롯데리아">롯데리아</option>
        </select>
       <button type="button"><p>GO</p></button>
           
     </form>
+
     </dl>   
      </div><!--#footer_top-->
-  <div id="footer_body">
+    <div id="footer_body">
       <div class="qr">
-          <img src="../all/footer/bac.png" alt="세븐일레븐 QR코드">
+       <!--   <img src="../all/footer/bac.png" alt="세븐일레븐 QR코드">-->
       </div>
       <div class="cont_footer">
           <ul>
@@ -140,7 +199,11 @@
             <li><a href="#"><span>블로그</span></a></li>
         </ul>
         </div>
-    </div><!--// #footer_body-->
+    <div class="img_a">
+        <p>본 사이트는 상업목적이 아닌 포트폴리오용으로 제작되었음을 알립니다.</p>
+        <a class="sev_img" href="#">이미지 출저보기</a>
+       </div>
+        </div><!--// #footer_body-->
         </div>
         </footer>
  </div><!--//#wrap-->

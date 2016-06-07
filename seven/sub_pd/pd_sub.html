@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
 <head>
-    <meta charset="UTF-8" />
+       <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" conter="width=device-width,initial-scale=1.0" />
     <link rel="apple-touch-icon" href="#" />
@@ -9,9 +9,18 @@
     <link rel="stylesheet" href="./css/lib/reset.css" />
     <link rel="stylesheet" href="./css/pd_sub.css" />
     <link rel="stylesheet" href="../all/css/seven_hf.css" />
+    <link rel="stylesheet" href="./fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
     <script src="./js/jquery/jquery-1.12.2.min.js"></script>
     <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
     <script src="./js/jquery/jquery-ui.min.js"></script>
+    <script src="../main/js/menuBar.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="./fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
     
     <!--[if lte IE 9>
     <script src="/js/dist/html5shiv.min.js"></script>
@@ -19,27 +28,74 @@
     <script src="/js/dist/PIE.js"></script>
     <script src="/js/dist/respond.min.js"></script>
      -->
-     <style>s
+     <style>
     </style>
     <script>
+   $(function(){
+        menuBar();
+       $(".fancybox").fancybox();
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
     </script>
-    <title>세븐일레븐</title>
+    <title>세븐일레븐 상품소개</title>
 </head>
 <body>
     <div id="wrap">
-        <header id="seven_Header">
+         <header id="seven_Header">
             <h1><a href="../main/seven_main.html"><span>로고</span></a></h1>
+        
         <nav class="nav">
-          <ul>
-            <li class="top_navi_1" title="세븐일레븐 회사소개서브"><a href="../sub_about/about_sub.html">소개</a></li>
-            <li class="top_navi_2" title="세븐일레븐 진행중인 이벤트"><a href="../sub_event/event_sub.html">이벤트</a></li>
-            <li class="top_navi_3" title="세븐일레븐 판매중인 상품"><a href="../sub_pd/pd_sub.html">상품소개</a></li>
-            <li class="top_navi_4" title="세븐일레븐 창업안내"><a href="#">창업안내</a></li>
-            <li class="login" title="로그인"><a href="../login/seven_login.html">로그인</a></li>
+         <dl class="mainMenu">
+             <dt class="top_navi_1 link">소개</dt>
+             <dd class="menuDd">
+                 <ul>
+                     <li><a href="../sub_about/about_sub.html" title="회사소개">회사소개</a></li>
+                     <li><a href="#" title="사회공헌">사회공헌</a></li>
+                     <li><a href="#" title="환경경영">환경경영</a></li>
+                     <li><a href="#" title="고객의 소리">고객의 소리</a></li>
+                     <li><a href="#" title="고객만족도조사">고객만족도조사</a></li>
+                 </ul>
+             </dd>
+         </dl>
+          <dl class="mainMenu">
+             <dt class="top_navi_2 link">이벤트</dt>
+             <dd class="menuDd">
+                 <ul>
+                     <li><a href="../sub_event/event_sub.html" title="진행중인 이벤트">진행중인 이벤트</a></li>
+                     <li><a href="#" title="성공 스토리">성공 스토리</a></li>
+                 </ul>
+             </dd>
+         </dl>
+         <dl class="mainMenu">
+             <dt class="top_navi_3 link">상품소개</dt>
+             <dd class="menuDd">
+                 <ul>
+                     <li><a href="../sub_pd/pd_sub.html" title="NewBast">New&amp;Best</a></li>
+                     <li><a href="#" title="PB상품">PB상품</a></li>
+                     <li><a href="#" title="예약도시락">예약도시락</a></li>
+                 </ul>
+             </dd>
+         </dl>
+         <dl class="mainMenu">
+             <dt class="top_navi_4 link">창업안내</dt>
+             <dd class="menuDd">
+                 <ul>
+                     <li><a href="../sub_4/seven_sub_4.html" title="창업가이드">창업가이드</a></li>
+                     <li><a href="#" title="가맹 FAQ">가맹 FAQ</a></li>
+                     <li><a href="#" title="가맹상담">가맹상담</a></li>
+                     <li><a href="#" title="가맹점포">가맹점포</a></li>
+                 </ul>
+             </dd>
+         </dl>
+         <ul class="sitemap">
+             <li class="login" title="로그인"><a href="../login/seven_login.html">로그인</a></li>
             <li class="customer" title="고객센터"><a href="#">고객센터</a></li>
-          </ul>
-        </nav>
-          </header><!--//#7_header-->
+         </ul>
+       </nav>
+          </header><!--//#seven_Header-->
            
         
            <article id="top_banner">
@@ -47,16 +103,14 @@
              <h2>상품소개</h2>
              <p>세븐일레븐의 신상품과 BEST상품을 만나보세요&#33;</p>
                </div> 
-               </article>    
-    
+               </article> 
         
         <article id="product_icon">
-            
-                <ul class="mini_nav">
+            <ul class="mini_nav">
                     <li class="home"><a href="../main/seven_main.html"><span>home</span></a></li>
                     <li class="text">&#62;</li>
                     <li class="text_1">상품소개</li>
-                </ul>
+            </ul>
         
               <h2>상품 네비 아이콘</h2>
             <div class="icon">
@@ -82,48 +136,60 @@
             </div>
     
         </article>
-            <article id="product_n_b">
-              <div class="neww">
-               <p>NEW 신상품</p>
-                 <ul><a href="#"><span>더보기</span></a>
-                 </ul>
-               </div>
-            <div class="new_box">
+        <article id="product_n_b">
+             <div id="newBox">
+              <ul>
+                  <li>NEW 신상품</li>
+                  <li><a href="#"><span>더보기</span></a></li>
+              </ul>
+               <div class="newBan">
                 <ul>
-                    <li><a href="#"><span>box1</span></a></li>
-                    <li><a href="#"><span>box2</span></a></li>
-                    <li><a href="#"><span>box3</span></a></li>
+                   <li><a class="fancybox" rel="gallery1" href="./img/new_1m.png" title="">
+                        <img src="./img/new_1s.png" alt="" /></a></li>
+                   <li><a class="fancybox" rel="gallery1" href="./img/new_2m.png" title="">
+                        <img src="./img/new_2s.png" alt="" /></a></li>
+                   <li><a class="fancybox" rel="gallery1" href="./img/new_3m.png" title="">
+                        <img src="./img/new_3s.png" alt="" /></a></li>
                 </ul>
-            </div>
-              <div class="best">
-                  <p>BEST 상품</p>
-                 <ul><a href="#"><span>더보기</span></a>
-                 </ul>
                </div>
-              <div class="best_box">
+             </div>
+             <div id="bestBox">
+                 <ul>
+                     <li>BEST 상품</li>
+                     <li><a href="#"><span>더보기</span></a></li>
+                 </ul>
+                <div class="bestBan">
                   <ul>
-                    <li><a href="#"><span>box1</span></a></li>
-                    <li><a href="#"><span>box2</span></a></li>
-                    <li><a href="#"><span>box3</span></a></li>
+                    <li><a class="fancybox" rel="gallery1" href="./img/best_1m.png" title="">
+                        <img src="./img/best_1s.png" alt="" /></a></li>
+                   <li><a class="fancybox" rel="gallery1" href="./img/best_2m.png" title="">
+                        <img src="./img/best_2s.png" alt="" /></a></li>
+                   <li><a class="fancybox" rel="gallery1" href="./img/best_3m.png" title="">
+                        <img src="./img/best_3s.png" alt="" /></a></li>
                 </ul>
-              </div>
+                </div>
+             </div>
+              <div id="mob_sub">
+             </div>
             </article><!--//#product_n_b-->
           
-        <footer>
-           <div id="footer_Box">
-            <h2>7eleFooter</h2>
-  <div id="footer_top">
-    <dl class="util">
-              <dt>CUSTOMER</dt>
-                  <dd>
-                      <ul>
-                        <li><a href="#">고객의 소리</a></li>
-                        <li><a href="#">채용문의</a></li>
-                        <li><a href="#">가맹상담</a></li>
-                        <li><a href="#">입점문의</a></li>
-                      </ul>
-                  </dd>
-             <dt>RECRUIT</dt>
+   <footer>
+    <div id="footer_Box">
+     <h2>7eleFooter</h2>
+        <div id="footer_top">
+     <dl class="util">
+        <dt>CUSTOMER</dt>
+            <dd>
+                  <ul>
+                    <li><a href="#">고객의 소리</a></li>
+                    <li><a href="#">채용문의</a></li>
+                    <li><a href="#">가맹상담</a></li>
+                    <li><a href="#">입점문의</a></li>
+                  </ul>
+            </dd>
+            </dl>
+     <dl class="util2">
+        <dt>RECRUIT</dt>
             <dd>
                 <ul>
                     <li><a href="#">기업채용</a></li>
@@ -131,23 +197,24 @@
                     <li><a href="#">MATE</a></li>
                 </ul>
             </dd>
-            </dl>
+     </dl>
     <dl class="family">
       <form action="">
        <select name="familyOption" id="familyOption">
         <option value="롯데그룹">롯데그룹</option>
         <option value="LPOINT">LPOINT</option>
-        <option value="롯데제과">롯데제과</option>
+        <option valuze="롯데제과">롯데제과</option>
         <option value="롯데리아">롯데리아</option>
        </select>
       <button type="button"><p>GO</p></button>
           
     </form>
+
     </dl>   
      </div><!--#footer_top-->
-  <div id="footer_body">
+    <div id="footer_body">
       <div class="qr">
-          <img src="../all/footer/bac.png" alt="세븐일레븐 QR코드">
+       <!--   <img src="../all/footer/bac.png" alt="세븐일레븐 QR코드">-->
       </div>
       <div class="cont_footer">
           <ul>
@@ -168,7 +235,11 @@
             <li><a href="#"><span>블로그</span></a></li>
         </ul>
         </div>
-    </div><!--// #footer_body-->
+    <div class="img_a">
+        <p>본 사이트는 상업목적이 아닌 포트폴리오용으로 제작되었음을 알립니다.</p>
+        <a class="sev_img" href="#">이미지 출저보기</a>
+       </div>
+        </div><!--// #footer_body-->
         </div>
         </footer>
  </div><!--//#wrap-->

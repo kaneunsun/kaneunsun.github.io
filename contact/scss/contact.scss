@@ -1,0 +1,16 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background: #febf01; 
+    background: -moz-linear-gradient(-45deg,  #febf01 53%, #fed500 53%, #9fd1ca 53%, #44ceb9 53%); 
+    background: -webkit-linear-gradient(-45deg,  #febf01 53%,#fed500 53%,#9fd1ca 53%,#44ceb9 53%);
+    background: linear-gradient(135deg,  #febf01 53%,#fed500 53%,#9fd1ca 53%,#44ceb9 53%);}
+
+@import 'full.scss';
+@import 'tablet.scss';
+@import 'mobile.scss';
+@import 'basic.scss';
+
+
+
+

@@ -1,0 +1,27 @@
+@media screen and (min-width: 960px) { #wrap { width: 90%; height: 100%; }
+  #wrap > h1 { width: 100%; height: 80px; padding-top: 30px; font-size: 3rem; text-align: center; text-shadow: 1px 1px 3px #44ceb9; color: #ffffff; }
+  #wrap > #white_top { width: 100%; height: 28px; left: 0; top: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap > #whith_right { width: 28px; height: 100%; top: 0; right: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap > #whith_left { width: 28px; height: 100%; top: 0; left: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap > #whith_bottom { width: 100%; height: 28px; bottom: 0; left: 0; -webkit-position: fixed; -moz-position: fixed; -ms-position: fixed; position: fixed; -webkit-background-color: #ffffff; -moz-background-color: #ffffff; -ms-background-color: #ffffff; background-color: #ffffff; -webkit-z-index: 200; -moz-z-index: 200; -ms-z-index: 200; z-index: 200; }
+  #wrap #menu { position: fixed; right: 0; top: 20%; width: 10em; margin-top: -2.5em; z-index: 500; background-color: #fff; color: #fff; border-radius: 3em 0em 0em 3em; padding: .5em 2em .5em 0em; box-shadow: -10px 10px #febf01; /*  z-index: -10;*/ }
+  #wrap #menu > ul { height: 100%; width: 100%; text-align: left; font-family: "Josefin Sans" , sans-serif, bold; margin-left: -10px; }
+  #wrap #menu > ul > li > a { width: 100%; height: 100%; font-size: 1.5rem; line-height: 150%; letter-spacing: 2px; }
+  #wrap #menu > ul > li > a:hover { color: #febf01; text-decoration: none; }
+  #wrap #portfolio { width: 100%; height: 100%; }
+  #wrap #portfolio ul { margin: 0 auto; padding: 0; width: 900px; height: 100%; }
+  #wrap #portfolio ul > li { margin: 0 auto; width: 900px; height: 600px; float: left; margin-left: 10%; }
+  #wrap #portfolio ul > li:nth-of-type(1) { width: 710px; height: 477px; border-style: solid; border-width: 5px; border-color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(1) > .pofo_1 { margin: 5px 0 0 5px; width: 700px; height: 467px; background-image: url("../img/kera_one.png"); }
+  #wrap #portfolio ul > li:nth-of-type(2) { margin-top: 30px; width: 710px; height: 477px; border-style: solid; border-width: 5px; border-color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(2) > .pofo_2 { margin: 5px 0 0 5px; width: 700px; height: 467px; background-image: url("../img/kera_two.png"); }
+  #wrap #portfolio ul > li:nth-of-type(3) { margin-bottom: 150px; width: 40%; height: 319px; background-image: url("../img/pofo2.png"); background-repeat: no-repeat; background-position: left; }
+  #wrap #portfolio ul > li:nth-of-type(3):hover { transform: scale(1.2); transition: all 0.5s; }
+  #wrap #portfolio ul > li:nth-of-type(4) { width: 180px; height: 40px; margin-right: 15%; margin-top: 8%; float: right; border-style: solid; border-width: 5px; border-color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(4) > a { text-align: center; line-height: 250%; font-size: 1em; font-weight: bold; width: 100%; height: 100%; color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(4) > a:hover { background-color: #555; }
+  #wrap #portfolio ul > li:nth-of-type(5) { width: 180px; height: 40px; margin-right: 15%; margin-top: 20px; float: right; border-style: solid; border-width: 5px; border-color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(5) > a { text-align: center; line-height: 250%; font-size: 1em; font-weight: bold; width: 100%; height: 100%; color: #ffffff; }
+  #wrap #portfolio ul > li:nth-of-type(5) > a:hover { background-color: #555; } }
+
+/*# sourceMappingURL=full.css.map */
